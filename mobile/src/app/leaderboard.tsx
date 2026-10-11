@@ -11,6 +11,7 @@ import { auth, database } from '../firebase';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
+import { fetchLeaderboard } from '../services/serverApi';
 
 const { width } = Dimensions.get('window');
 
@@ -228,27 +229,32 @@ export default function LeaderboardScreen() {
   }, []);
 
   useEffect(() => {
-    const playersRef = ref(database, 'players');
-    const unsub = onValue(playersRef, (snap) => {
-      const data = snap.val() || {};
-      const list: PlayerEntry[] = Object.entries(data).map(([uid, val]: any) => ({
-        uid,
-        username: val.username || 'لاعب',
-        coins: val.coins || 0,
-        photoURL: val.photoURL,
-        wins: val.stats?.wins || 0,
-        dailyWins: val.stats?.dailyWins || 0,
-        weeklyWins: val.stats?.weeklyWins || 0,
-        monthlyWins: val.stats?.monthlyWins || 0,
-        losses: val.stats?.losses || 0,
-        draws: val.stats?.draws || 0,
-        totalMatches: val.stats?.totalMatches || 0,
-      }));
-      setPlayers(list);
-      setLoading(false);
-    });
-    return () => unsub();
-  }, []);
+    const loadLeaderboard = async () => {
+      try {
+        const queryType = period === 'yearly' ? 'all' : period;
+        const list = await fetchLeaderboard(queryType as any);
+        setPlayers(list.map((u: any) => ({
+          uid: u.uid,
+          username: u.username || 'لاعب',
+          coins: u.coins || 0,
+          photoURL: u.photoURL,
+          wins: u.wins || 0,
+          dailyWins: u.wins || 0,
+          weeklyWins: u.wins || 0,
+          monthlyWins: u.wins || 0,
+          losses: 0,
+          draws: 0,
+          totalMatches: u.wins || 0,
+        })));
+      } catch (err) {
+        console.log('Leaderboard fetch error:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadLeaderboard();
+  }, [period]);
 
   const PERIODS: { key: Period; icon: string; label: string; prize: string; prizeDesc: string }[] = [
     { key: 'daily',   icon: '📅', label: t('daily'),   prize: t('dailyPrize'),        prizeDesc: t('dailyPrizeDesc') },

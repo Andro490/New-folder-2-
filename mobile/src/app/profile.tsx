@@ -11,6 +11,7 @@ import { ref as storageRef, uploadString, getDownloadURL } from 'firebase/storag
 import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '../context/ThemeContext';
 import { useLanguage } from '../context/LanguageContext';
+import { getLocalUser, fetchUserProfile, updateUserProfile, clearAuthSession } from '../services/serverApi';
 
 export default function ProfileScreen() {
   const router = useRouter();
@@ -38,33 +39,49 @@ export default function ProfileScreen() {
   const [loadingArchive, setLoadingArchive] = useState(false);
 
   useEffect(() => {
-    if (!user) return;
-    const playerRef = ref(database, `players/${user.uid}`);
-    const unsub = onValue(playerRef, (snap) => {
-      const data = snap.val();
-      if (data) {
-        setUsername(data.username || user.displayName || 'لاعب');
-        setPhone(data.phone || '');
-        setPhotoURL(data.photoURL || user.photoURL || null);
+    const loadProfile = async () => {
+      const local = await getLocalUser();
+      if (local) {
+        setUsername(local.username || 'لاعب');
+        setPhone(local.phone || '');
+        setPhotoURL(local.photoURL || null);
         setStats({
-          matches: (data.wins || 0) + (data.losses || 0) + (data.draws || 0),
-          wins: data.wins || 0,
-          losses: data.losses || 0,
-          draws: data.draws || 0,
-          coins: data.coins || 0,
+          matches: (local.stats?.wins || 0) + (local.stats?.losses || 0),
+          wins: local.stats?.wins || 0,
+          losses: local.stats?.losses || 0,
+          draws: 0,
+          coins: local.coins || 0,
         });
       }
       setLoading(false);
-    });
-    return () => unsub();
-  }, [user]);
+
+      try {
+        const fresh = await fetchUserProfile();
+        if (fresh) {
+          setUsername(fresh.username || 'لاعب');
+          setPhone(fresh.phone || '');
+          setPhotoURL(fresh.photoURL || null);
+          setStats({
+            matches: (fresh.stats?.wins || 0) + (fresh.stats?.losses || 0),
+            wins: fresh.stats?.wins || 0,
+            losses: fresh.stats?.losses || 0,
+            draws: 0,
+            coins: fresh.coins || 0,
+          });
+        }
+      } catch (err) {
+        console.log('Profile refresh error:', err);
+      }
+    };
+
+    loadProfile();
+  }, []);
 
   const handleSave = async () => {
-    if (!user || !username.trim()) return;
+    if (!username.trim()) return;
     setSaving(true);
     try {
-      await update(ref(database, `players/${user.uid}`), { username: username.trim() });
-      await updateProfile(user, { displayName: username.trim() });
+      await updateUserProfile({ username: username.trim() });
       Alert.alert(t('success'), t('nameUpdated'));
     } catch (error) {
       Alert.alert(t('error'), t('updateError'));
@@ -73,13 +90,13 @@ export default function ProfileScreen() {
   };
 
   const handleSavePhone = async () => {
-    if (!user || !phone.trim()) {
+    if (!phone.trim()) {
       Alert.alert(t('error'), 'من فضلك أدخل رقم الهاتف');
       return;
     }
     setSavingPhone(true);
     try {
-      await update(ref(database, `players/${user.uid}`), { phone: phone.trim() });
+      await updateUserProfile({ phone: phone.trim() });
       Alert.alert(t('success'), t('phoneUpdated'));
     } catch (error) {
       Alert.alert(t('error'), t('updateError'));

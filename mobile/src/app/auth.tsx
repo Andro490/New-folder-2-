@@ -6,13 +6,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
-import {
-  createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
-  updateProfile,
-} from "firebase/auth";
-import { ref, set } from "firebase/database";
-import { auth, database } from "../firebase";
+import { registerUser, loginUser } from "../services/serverApi";
 
 export default function AuthScreen() {
   const router = useRouter();
@@ -40,29 +34,13 @@ export default function AuthScreen() {
     setLoading(true);
     try {
       if (isLogin) {
-        await signInWithEmailAndPassword(auth, email, password);
+        await loginUser(email, password);
       } else {
-        const cred = await createUserWithEmailAndPassword(auth, email, password);
-        await updateProfile(cred.user, { displayName: username });
-        await set(ref(database, `players/${cred.user.uid}`), {
-          username,
-          phone: phone.trim(),
-          email,
-          coins: 0,
-          wins: 0,
-          losses: 0,
-          createdAt: Date.now(),
-        });
+        await registerUser(username, email, password, phone);
       }
       router.replace("/");
     } catch (error: any) {
-      let msg = "حدث خطأ، حاول مرة أخرى";
-      if (error.code === "auth/email-already-in-use") msg = "البريد الإلكتروني مستخدم بالفعل";
-      else if (error.code === "auth/invalid-email") msg = "البريد الإلكتروني غير صحيح";
-      else if (error.code === "auth/wrong-password") msg = "كلمة المرور غير صحيحة";
-      else if (error.code === "auth/user-not-found") msg = "الحساب غير موجود";
-      else if (error.code === "auth/weak-password") msg = "كلمة المرور ضعيفة جداً (6 أحرف على الأقل)";
-      Alert.alert("خطأ", msg);
+      Alert.alert("تنبيه", error?.message || "حدث خطأ أثناء الاتصال بالسيرفر، حاول مرة أخرى");
     } finally {
       setLoading(false);
     }

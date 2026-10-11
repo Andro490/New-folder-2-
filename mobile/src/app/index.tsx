@@ -3,11 +3,9 @@ import { View, Text, StyleSheet, TouchableOpacity, Alert, ImageBackground, Image
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { useRouter, Link } from 'expo-router';
-import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { ref, onValue } from 'firebase/database';
-import { auth, database } from '../firebase';
 import { useBackgroundMusic } from '../hooks/useSound';
 import { useLanguage } from '../context/LanguageContext';
+import { fetchUserProfile, getLocalUser } from '../services/serverApi';
 
 export default function MainScreen() {
   const router = useRouter();
@@ -17,24 +15,36 @@ export default function MainScreen() {
   useBackgroundMusic(); // 🎵 تشغيل الموسيقى الخلفية
 
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => {
-      if (!user) {
+    const checkUser = async () => {
+      // 1. فحص المستخدم المحفوظ محلياً أو من السيرفر
+      const local = await getLocalUser();
+      if (!local) {
         router.replace('/auth' as any);
-      } else {
-        // جلب بيانات اللاعب من قاعدة البيانات
-        const playerRef = ref(database, `players/${user.uid}`);
-        onValue(playerRef, (snap) => {
-          const data = snap.val();
-          setUserInfo({
-            username: data?.username || user.displayName || 'لاعب',
-            coins: data?.coins ?? 0,
-            photoURL: data?.photoURL || user.photoURL,
-          });
-        });
-        setAuthChecked(true);
+        return;
       }
-    });
-    return () => unsub();
+      setUserInfo({
+        username: local.username || 'لاعب',
+        coins: local.coins ?? 0,
+        photoURL: local.photoURL,
+      });
+      setAuthChecked(true);
+
+      // 2. تحديث الرصيد والبيانات من السيرفر في الخلفية
+      try {
+        const freshUser = await fetchUserProfile();
+        if (freshUser) {
+          setUserInfo({
+            username: freshUser.username || 'لاعب',
+            coins: freshUser.coins ?? 0,
+            photoURL: freshUser.photoURL,
+          });
+        }
+      } catch (err) {
+        console.log('Error refreshing profile:', err);
+      }
+    };
+
+    checkUser();
   }, []);
 
   const goToProfile = () => {
