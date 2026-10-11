@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "mobile",
+    "name": "فوائد جيمينج",
     "slug": "mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/kora_royal_logo.png",
     "scheme": "mobile",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -19,10 +19,8 @@
     "android": {
       "package": "com.emelasr.mobileapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+        "backgroundColor": "#050B20",
+        "foregroundImage": "./assets/images/kora_royal_logo.png"
       },
       "predictiveBackGestureEnabled": false,
       "permissions": [
