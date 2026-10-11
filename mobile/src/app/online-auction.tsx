@@ -156,11 +156,11 @@ const BID_STEP = 1;
 
 
 const COACHES = [
-  { id: 1, name: "José Mourinho",   emoji: "🧔", price: 40, bonus: 0.30, level: "مميز جداً",  desc: "خبير التكتيك الدفاعي" },
-  { id: 2, name: "Pep Guardiola",   emoji: "👨‍🦲", price: 30, bonus: 0.22, level: "مميز",      desc: "أسطورة كرة الضغط" },
-  { id: 3, name: "Zinedine Zidane", emoji: "⭐", price: 20, bonus: 0.15, level: "جيد جداً",  desc: "قائد الأبطال" },
-  { id: 4, name: "Carlo Ancelotti",emoji: "🎩", price: 10, bonus: 0.08, level: "جيد",      desc: "المدرب المتوازن" },
-  { id: 5, name: "مدرب مجاني",     emoji: "🧑‍🏫", price: 0,  bonus: 0.00, level: "مجاني",    desc: "بدون مدرب" },
+  { id: 1, name: "José Mourinho",   imageUrl: "https://efimg.com/efootballhub22/images/coach_cards/17608560707469.png", price: 40, bonus: 0.30, level: "مميز جداً",  desc: "خبير التكتيك الدفاعي" },
+  { id: 2, name: "Johan Cruyff",    imageUrl: "https://efimg.com/efootballhub22/images/coach_cards/17605876354558.png", price: 20, bonus: 0.15, level: "جيد جداً",  desc: "قائد الأبطال" },
+  { id: 3, name: "Pep Guardiola",   imageUrl: "https://efimg.com/efootballhub22/images/coach_cards/17601849721048.png", price: 30, bonus: 0.22, level: "مميز",      desc: "أسطورة كرة الضغط" },
+  { id: 4, name: "D. Deschamps",    imageUrl: "https://efimg.com/efootballhub22/images/coach_cards/17606681559180.png", price: 10, bonus: 0.08, level: "جيد",      desc: "المدرب المتوازن" },
+  { id: 5, name: "Hossam Hassan",   imageUrl: "https://efimg.com/efootballhub22/images/coach_cards/88080431.png", price: 0,  bonus: 0.00, level: "مجاني",    desc: "بدون مدرب" },
 ];
 
 function CoachScreen({ budget, onSelect }: { budget: number; onSelect: (bonus: number, coachName: string) => void }) {
@@ -179,7 +179,7 @@ function CoachScreen({ budget, onSelect }: { budget: number; onSelect: (bonus: n
             const isSelected = selected === coach.id;
             return (
               <TouchableOpacity key={coach.id} disabled={!canAfford} onPress={() => setSelected(coach.id)} style={[{ backgroundColor: isSelected ? "#1e3a5f" : "#0f172a", borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 2, borderColor: isSelected ? "#3b82f6" : canAfford ? "#1e293b" : "#1e293b", opacity: canAfford ? 1 : 0.4, flexDirection: "row", alignItems: "center" }]}>
-                <Text style={{ fontSize: 36, marginRight: 14 }}>{coach.emoji}</Text>
+                <Image source={{ uri: coach.imageUrl }} style={{ width: 50, height: 75, marginRight: 14, borderRadius: 8 }} resizeMode="contain" />
                 <View style={{ flex: 1 }}>
                   <View style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                     <Text style={{ color: "#fff", fontWeight: "bold", fontSize: 16 }}>{coach.name}</Text>
