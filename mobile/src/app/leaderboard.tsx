@@ -115,10 +115,10 @@ function Podium({ top3, myUid }: { top3: PlayerEntry[]; myUid?: string }) {
       <Text style={[styles.podiumLabel, { color: theme.accent }]}>{useLanguage().t('currentStandings')}</Text>
       <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'center', gap: 6, marginTop: 16 }}>
         {slots.map((slot, i) => {
-          if (!slot.player) return <View key={i} style={{ flex: 1 }} />;
+          if (!slot.player) return <View key={`empty-${slot.rank}-${i}`} style={{ flex: 1 }} />;
           const isMe = slot.player.uid === myUid;
           return (
-            <Animated.View key={slot.rank} style={{ flex: 1, alignItems: 'center', opacity: opacityAnims[i], transform: [{ translateY: entranceAnims[i] }] }}>
+            <Animated.View key={`podium-slot-${slot.rank}`} style={{ flex: 1, alignItems: 'center', opacity: opacityAnims[i], transform: [{ translateY: entranceAnims[i] }] }}>
               {/* Crown */}
               <Text style={{ fontSize: slot.rank === 1 ? 28 : 20, marginBottom: 4 }}>{slot.crown}</Text>
 
