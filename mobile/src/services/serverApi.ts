@@ -1,8 +1,8 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { io, Socket } from 'socket.io-client';
 
-// عنوان سيرفر الـ VPS الخاص بك
-export const API_BASE_URL = 'http://72.60.190.38:5000';
+// عنوان سيرفر الـ VPS عبر Cloudflare Tunnel (HTTPS)
+export const API_BASE_URL = 'https://motion-wealth-hopkins-outside.trycloudflare.com';
 
 const TOKEN_KEY = 'user_auth_token';
 const USER_KEY = 'user_profile_data';
