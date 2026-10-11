@@ -1,0 +1,5267 @@
+[
+  {
+    "id": "88045755960770",
+    "name": "Paolo Maldini",
+    "position": "CB",
+    "team": "Italy",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755960770_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755863174",
+    "name": "Eden Hazard",
+    "position": "LWF",
+    "team": "Chelsea B",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755863174_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755828950",
+    "name": "George Best",
+    "position": "RWF",
+    "team": "Northern Ireland",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755828950_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145351392",
+    "name": "Lilian Thuram",
+    "position": "RB",
+    "team": "France",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145351392_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348075",
+    "name": "Johan Cruyff",
+    "position": "AMF",
+    "team": "Netherlands",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348075_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460993514",
+    "name": "Ruud Gullit",
+    "position": "CF",
+    "team": "Netherlands",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460993514_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387119495",
+    "name": "Pele",
+    "position": "SS",
+    "team": "Santos FC",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387119495_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755964133",
+    "name": "Fabio Cannavaro",
+    "position": "CB",
+    "team": "Italy",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755964133_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387119642",
+    "name": "Zlatan Ibrahimovic",
+    "position": "CF",
+    "team": "Sweden",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387119642_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460894376",
+    "name": "Gareth Bale",
+    "position": "RWF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460894376_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460993461",
+    "name": "Luis Figo",
+    "position": "RWF",
+    "team": "Portugal",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460993461_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145248321",
+    "name": "Luis Suarez",
+    "position": "CF",
+    "team": "Uruguay",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145248321_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145253792",
+    "name": "Neymar Jr",
+    "position": "LWF",
+    "team": "Brazil",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145253792_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755829934",
+    "name": "Kaka",
+    "position": "AMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755829934_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755964138",
+    "name": "Andriy Shevchenko",
+    "position": "CF",
+    "team": "AC Milan",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755964138_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755827094",
+    "name": "Edwin van der Sar",
+    "position": "GK",
+    "team": "Netherlands",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755827094_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87962272400212",
+    "name": "Iker Casillas",
+    "position": "GK",
+    "team": "Madrid Chamartin B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87962272400212_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036092150743",
+    "name": "Gianluigi Buffon",
+    "position": "GK",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036092150743_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036092152543",
+    "name": "Michel Platini",
+    "position": "AMF",
+    "team": "Piemonte BN",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036092152543_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360588001",
+    "name": "Eric Cantona",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360588001_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360589289",
+    "name": "Andres Iniesta",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360589289_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360591553",
+    "name": "Philipp Lahm",
+    "position": "RB",
+    "team": "Munchen RW",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360591553_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360594345",
+    "name": "Franck Ribery",
+    "position": "LWF",
+    "team": "Munchen RW",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360594345_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719801",
+    "name": "Carles Puyol",
+    "position": "CB",
+    "team": "Spain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719801_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719824",
+    "name": "Ronaldinho Gaucho",
+    "position": "LWF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719824_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719854",
+    "name": "Zico",
+    "position": "AMF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719854_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036629155304",
+    "name": "Frank Rijkaard",
+    "position": "DMF",
+    "team": "AC Milan",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036629155304_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039044943928",
+    "name": "Wayne Rooney",
+    "position": "SS",
+    "team": "Manchester United",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039044943928_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074371",
+    "name": "Francesco Totti",
+    "position": "AMF",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074371_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074373",
+    "name": "Pavel Nedved",
+    "position": "AMF",
+    "team": "Piemonte BN",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074373_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074405",
+    "name": "Lothar Matthaus",
+    "position": "CMF",
+    "team": "Germany",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074405_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074413",
+    "name": "K. Heinz Rummenigge",
+    "position": "CF",
+    "team": "Germany",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074413_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039313485858",
+    "name": "Ousmane Dembele",
+    "position": "CF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039313485858_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581926569",
+    "name": "Alessandro Nesta",
+    "position": "CB",
+    "team": "S.S. Lazio",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581926569_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945277",
+    "name": "Patrick Vieira",
+    "position": "DMF",
+    "team": "Arsenal FC",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945277_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945292",
+    "name": "Roberto Carlos",
+    "position": "LB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945292_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945312",
+    "name": "Andrea Pirlo",
+    "position": "DMF",
+    "team": "AC Milan",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945312_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945324",
+    "name": "Franz Beckenbauer",
+    "position": "CB",
+    "team": "Munchen RW",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945324_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945329",
+    "name": "Franco Baresi",
+    "position": "CB",
+    "team": "AC Milan",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945329_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945358",
+    "name": "Alessandro Del Piero",
+    "position": "CF",
+    "team": "Piemonte BN",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945358_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581948642",
+    "name": "Claude Makelele",
+    "position": "DMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581948642_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581948647",
+    "name": "Peter Schmeichel",
+    "position": "GK",
+    "team": "Manchester United",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581948647_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039850384095",
+    "name": "Marcel Desailly",
+    "position": "CB",
+    "team": "Chelsea B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039850384095_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387117922",
+    "name": "Xavi",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387117922_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387118554",
+    "name": "Samuel Eto o",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387118554_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387120247",
+    "name": "Petr Cech",
+    "position": "GK",
+    "team": "Chelsea B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387120247_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387120260",
+    "name": "Ferenc Puskas",
+    "position": "CF",
+    "team": "Hungary",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387120260_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387150135",
+    "name": "Leonardo Bonucci",
+    "position": "CB",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387150135_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387251679",
+    "name": "Ruud van Nistelrooij",
+    "position": "CF",
+    "team": "Netherlands",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387251679_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040655554414",
+    "name": "Gianfranco Zola",
+    "position": "SS",
+    "team": "Chelsea B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040655554414_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040655554922",
+    "name": "Gerd Muller",
+    "position": "CF",
+    "team": "Munchen RW",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040655554922_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040655690467",
+    "name": "Jaap Stam",
+    "position": "CB",
+    "team": "Manchester United",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040655690467_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460901956",
+    "name": "Raphael Varane",
+    "position": "CB",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460901956_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145220884",
+    "name": "David Villa",
+    "position": "CF",
+    "team": "Spain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145220884_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348017",
+    "name": "David Beckham",
+    "position": "RMF",
+    "team": "England",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348017_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348046",
+    "name": "Rivaldo",
+    "position": "AMF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348046_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348047",
+    "name": "Romario",
+    "position": "CF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348047_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348071",
+    "name": "Roberto Baggio",
+    "position": "SS",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348071_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487427597",
+    "name": "Diego Costa",
+    "position": "CF",
+    "team": "Chelsea B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487427597_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755827099",
+    "name": "Edgar Davids",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755827099_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755835027",
+    "name": "Giorgio Chiellini",
+    "position": "CB",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755835027_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755960809",
+    "name": "Marco van Basten",
+    "position": "CF",
+    "team": "Netherlands",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755960809_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755960774",
+    "name": "Tomas Rosicky",
+    "position": "AMF",
+    "team": "Czechia",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755960774_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755831094",
+    "name": "Wesley Sneijder",
+    "position": "AMF",
+    "team": "Internazionale Milano",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755831094_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755960789",
+    "name": "Javier Zanetti",
+    "position": "RB",
+    "team": "Internazionale Milano",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755960789_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032065752559",
+    "name": "Diego Maradona",
+    "position": "AMF",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032065752559_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334188021",
+    "name": "Denis Law",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334188021_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334188031",
+    "name": "Deco",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334188031_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032602496343",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032602496343_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407796182",
+    "name": "Christian Vieri",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407796182_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407796938",
+    "name": "Juan Sebastian Veron",
+    "position": "CMF",
+    "team": "S.S. Lazio",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407796938_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407833768",
+    "name": "Sergio Busquets",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407833768_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929799",
+    "name": "Oliver Kahn",
+    "position": "GK",
+    "team": "Germany",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929799_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929857",
+    "name": "Didier Drogba",
+    "position": "CF",
+    "team": "Chelsea B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929857_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360586141",
+    "name": "Clarence Seedorf",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360586141_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360615426",
+    "name": "Yaya Toure",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360615426_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719796",
+    "name": "Steven Gerrard",
+    "position": "CMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719796_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719863",
+    "name": "Diego Forlan",
+    "position": "CF",
+    "team": "Uruguay",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719863_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88037166026249",
+    "name": "Adriano",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88037166026249_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776505140",
+    "name": "Rio Ferdinand",
+    "position": "CB",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776505140_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776506699",
+    "name": "Ronald Koeman",
+    "position": "CB",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776506699_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776508032",
+    "name": "Carlos Tevez",
+    "position": "CF",
+    "team": "Manchester B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776508032_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776513453",
+    "name": "Pepe",
+    "position": "CB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776513453_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045003638",
+    "name": "Raul",
+    "position": "CF",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045003638_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074354",
+    "name": "Paul Scholes",
+    "position": "CMF",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074354_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045077725",
+    "name": "Rui Costa",
+    "position": "AMF",
+    "team": "AC Milan",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045077725_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581819327",
+    "name": "Gerard Pique",
+    "position": "CB",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581819327_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945293",
+    "name": "Cafu",
+    "position": "RB",
+    "team": "AC Milan",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945293_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945302",
+    "name": "Gabriel Batistuta",
+    "position": "CF",
+    "team": "Roma GR",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945302_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945366",
+    "name": "Michael Owen",
+    "position": "CF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945366_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040118816667",
+    "name": "Vitinha",
+    "position": "DMF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040118816667_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040118843714",
+    "name": "Lamine Yamal",
+    "position": "RMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040118843714_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387117286",
+    "name": "Dragan Stojkovic",
+    "position": "AMF",
+    "team": "Serbia",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387117286_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387118614",
+    "name": "Rafael Marquez",
+    "position": "CB",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387118614_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387120361",
+    "name": "Hasebe Makoto",
+    "position": "CB",
+    "team": "Eintracht Frankfurt",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387120361_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387158182",
+    "name": "Thiago Alcantara",
+    "position": "CMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387158182_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387180672",
+    "name": "Gennaro Gattuso",
+    "position": "DMF",
+    "team": "Italy",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387180672_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387251639",
+    "name": "Pep Guardiola",
+    "position": "DMF",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387251639_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387251676",
+    "name": "Frank Lampard",
+    "position": "CMF",
+    "team": "England",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387251676_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387251683",
+    "name": "Javier Saviola",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387251683_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040387251709",
+    "name": "Xabi Alonso",
+    "position": "DMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040387251709_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040655555524",
+    "name": "Christian Karembeu",
+    "position": "RMF",
+    "team": "France",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040655555524_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460860895",
+    "name": "Roy Makaay",
+    "position": "CF",
+    "team": "Netherlands",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460860895_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460874200",
+    "name": "Kagawa Shinji",
+    "position": "LMF",
+    "team": "Japan",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460874200_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041997764700",
+    "name": "Marcelo",
+    "position": "LB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041997764700_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88042534641027",
+    "name": "P. E. Aubameyang",
+    "position": "CF",
+    "team": "Borussia Dortmund",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88042534641027_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88042803039763",
+    "name": "Daniele De Rossi",
+    "position": "DMF",
+    "team": "Roma GR",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88042803039763_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88042803041930",
+    "name": "Vincent Kompany",
+    "position": "CB",
+    "team": "Belgium",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88042803041930_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88043608522885",
+    "name": "Minanda",
+    "position": "AMF",
+    "team": "EFB United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88043608522885_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88043608522886",
+    "name": "Castolo",
+    "position": "CF",
+    "team": "EFB United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88043608522886_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145277054",
+    "name": "G. van Bronckhorst",
+    "position": "LB",
+    "team": "Netherlands",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145277054_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348028",
+    "name": "Emmanuel Petit",
+    "position": "CMF",
+    "team": "France",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348028_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145348036",
+    "name": "Filippo Inzaghi",
+    "position": "CF",
+    "team": "Italy",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145348036_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044413651570",
+    "name": "Miroslav Klose",
+    "position": "CF",
+    "team": "Germany",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044413651570_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044413653830",
+    "name": "B. Schweinsteiger",
+    "position": "DMF",
+    "team": "Germany",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044413653830_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044413691936",
+    "name": "Mario Gotze",
+    "position": "CF",
+    "team": "Germany",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044413691936_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487423105",
+    "name": "Gary Cahill",
+    "position": "CB",
+    "team": "Chelsea B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487423105_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755960847",
+    "name": "Guti",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755960847_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044413760689",
+    "name": "Gianluca Zambrotta",
+    "position": "RB",
+    "team": "Italy",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044413760689_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030186577239",
+    "name": "Lionel Messi",
+    "position": "SS",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030186577239_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755841990",
+    "name": "Nagatomo Yuto",
+    "position": "LB",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755841990_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87962272401709",
+    "name": "Hristo Stoichkov",
+    "position": "SS",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87962272401709_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87963346275802",
+    "name": "Dennis Bergkamp",
+    "position": "SS",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87963346275802_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334054686",
+    "name": "Dimitar Berbatov",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334054686_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334187979",
+    "name": "Dida",
+    "position": "GK",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334187979_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334201401",
+    "name": "Uli HoeneSS",
+    "position": "AMF",
+    "team": "Munchen RW",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334201401_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033139494363",
+    "name": "Albert Ferrer",
+    "position": "CB",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033139494363_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407796167",
+    "name": "Demetrio Albertini",
+    "position": "DMF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407796167_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407835625",
+    "name": "Jordi Alba",
+    "position": "LB",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407835625_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929779",
+    "name": "Andy Cole",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929779_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929875",
+    "name": "Klaus Augenthaler",
+    "position": "CB",
+    "team": "Munchen RW",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929875_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555283056",
+    "name": "Fernando Torres",
+    "position": "CF",
+    "team": "Madrid Rosas RB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555283056_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555285997",
+    "name": "Roberto Donadoni",
+    "position": "LMF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555285997_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555400712",
+    "name": "Kubo Takefusa",
+    "position": "RMF",
+    "team": "Vasco Gipuzkoa AB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555400712_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555413494",
+    "name": "Bebeto",
+    "position": "CF",
+    "team": "Brazil",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555413494_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555413514",
+    "name": "Jan Koller",
+    "position": "CF",
+    "team": "Czechia",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555413514_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823722878",
+    "name": "Hugo Lloris",
+    "position": "GK",
+    "team": "France",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823722878_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823760248",
+    "name": "Marco Reus",
+    "position": "LMF",
+    "team": "Borussia Dortmund",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823760248_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823760539",
+    "name": "Lorenzo Insigne",
+    "position": "LWF",
+    "team": "Italy",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823760539_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360587367",
+    "name": "A. Costacurta",
+    "position": "RB",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360587367_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719858",
+    "name": "Giuseppe Bergomi",
+    "position": "RB",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719858_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88036360719884",
+    "name": "Edmilson",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88036360719884_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776506440",
+    "name": "Mark van Bommel",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776506440_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776539586",
+    "name": "Alexandre Pato",
+    "position": "CF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776539586_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776567939",
+    "name": "Christian Panucci",
+    "position": "RB",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776567939_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88038776638902",
+    "name": "Sergi Barjuan",
+    "position": "LB",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88038776638902_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039044943837",
+    "name": "Massimo Oddo",
+    "position": "RB",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039044943837_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039044946848",
+    "name": "Maicon",
+    "position": "RB",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039044946848_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074362",
+    "name": "Fernando Morientes",
+    "position": "CF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074362_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039045074401",
+    "name": "Christian Abbiati",
+    "position": "GK",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039045074401_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581811665",
+    "name": "Massimo Ambrosini",
+    "position": "DMF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581811665_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945303",
+    "name": "Nakata Hidetoshi",
+    "position": "AMF",
+    "team": "Roma GR",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945303_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945304",
+    "name": "Denis Irwin",
+    "position": "LB",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945304_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039581945332",
+    "name": "Bryan Robson",
+    "position": "CMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039581945332_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039850246968",
+    "name": "Steve McManaman",
+    "position": "RMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039850246968_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039850247068",
+    "name": "Phillip Cocu",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039850247068_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039850249642",
+    "name": "John O Shea",
+    "position": "DMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039850249642_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039850362027",
+    "name": "Riccardo Ferri",
+    "position": "CB",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039850362027_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88040655558775",
+    "name": "Thomas Vermaelen",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88040655558775_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460859043",
+    "name": "Nakamura Shunsuke",
+    "position": "AMF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460859043_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041460859101",
+    "name": "Narazaki Seigo",
+    "position": "GK",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041460859101_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88042803047215",
+    "name": "Honda Keisuke",
+    "position": "CF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88042803047215_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88043876825271",
+    "name": "Harry Kane",
+    "position": "CF",
+    "team": "England",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88043876825271_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044145247083",
+    "name": "Medhi Benatia",
+    "position": "CB",
+    "team": "Morocco",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044145247083_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044950524330",
+    "name": "Cristiano Ronaldo",
+    "position": "CF",
+    "team": "Portugal",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044950524330_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487406166",
+    "name": "Inui Takashi",
+    "position": "LWF",
+    "team": "Cerezo Osaka",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487406166_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487448127",
+    "name": "Usami Takashi",
+    "position": "SS",
+    "team": "Gamba Osaka",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487448127_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487528683",
+    "name": "Jay-Jay Okocha",
+    "position": "AMF",
+    "team": "Nigeria",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487528683_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88046829575511",
+    "name": "Lionel Messi",
+    "position": "SS",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88046829575511_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88039044945180",
+    "name": "Darren Fletcher",
+    "position": "DMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88039044945180_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045755964140",
+    "name": "Nwankwo Kanu",
+    "position": "CF",
+    "team": "Nigeria",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045755964140_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487454479",
+    "name": "Nagai Kensuke",
+    "position": "RWF",
+    "team": "Nagoya Grampus",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487454479_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487406740",
+    "name": "Kobayashi Yu",
+    "position": "CF",
+    "team": "Kawasaki Frontale",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487406740_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87961735641853",
+    "name": "T. Alexander-Arnold",
+    "position": "RB",
+    "team": "Liverpool R",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87961735641853_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88029918197892",
+    "name": "Marco Materazzi",
+    "position": "CB",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88029918197892_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455011956",
+    "name": "Diego Milito",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455011956_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455139794",
+    "name": "Ivan Zamorano",
+    "position": "CF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455139794_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030723575242",
+    "name": "Ivan Cordoba",
+    "position": "CB",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030723575242_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030991876915",
+    "name": "Tony Adams",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030991876915_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030992010688",
+    "name": "Patrick Kluivert",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030992010688_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032065752589",
+    "name": "Robert Pires",
+    "position": "LMF",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032065752589_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334090141",
+    "name": "Bojan Krkic",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334090141_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334187967",
+    "name": "Ludovic Giuly",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334187967_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033139494394",
+    "name": "Gilberto Silva",
+    "position": "DMF",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033139494394_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407796838",
+    "name": "Ze Roberto",
+    "position": "LMF",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407796838_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929774",
+    "name": "Park Ji-Sung",
+    "position": "LMF",
+    "team": "Manchester United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929774_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929787",
+    "name": "Bixente Lizarazu",
+    "position": "LB",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929787_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929826",
+    "name": "Giovane Elber",
+    "position": "CF",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929826_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929867",
+    "name": "Belletti",
+    "position": "RB",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929867_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929873",
+    "name": "Daniele Massaro",
+    "position": "CF",
+    "team": "AC Milan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929873_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407955778",
+    "name": "Ray Parlour",
+    "position": "RMF",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407955778_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407967737",
+    "name": "Stefano Fiore",
+    "position": "RMF",
+    "team": "S.S. Lazio",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407967737_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555279098",
+    "name": "Endo Yasuhito",
+    "position": "CMF",
+    "team": "Japan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555279098_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035555413488",
+    "name": "Daniel Van Buyten",
+    "position": "CB",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035555413488_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823751192",
+    "name": "Martin Caceres",
+    "position": "LB",
+    "team": "Uruguay",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823751192_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823752931",
+    "name": "Olivier Giroud",
+    "position": "CF",
+    "team": "France",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823752931_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823848926",
+    "name": "Rafael van der Vaart",
+    "position": "CMF",
+    "team": "Netherlands",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823848926_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823848953",
+    "name": "Martin Demichelis",
+    "position": "CB",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823848953_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88035823874883",
+    "name": "Lee Dixon",
+    "position": "RB",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88035823874883_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041461035950",
+    "name": "Atep",
+    "position": "LWF",
+    "team": "Indonesia",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041461035950_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88041461035951",
+    "name": "Mokhtar Dahari",
+    "position": "CF",
+    "team": "Malaysia",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88041461035951_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88043608522894",
+    "name": "Burchet",
+    "position": "RWF",
+    "team": "EFB United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88043608522894_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88044682118054",
+    "name": "Sergio Aguero",
+    "position": "CF",
+    "team": "Argentina",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88044682118054_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487392207",
+    "name": "Tijani Babangida",
+    "position": "RWF",
+    "team": "Nigeria",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487392207_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487393209",
+    "name": "Kawashima Eiji",
+    "position": "GK",
+    "team": "Kawasaki Frontale",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487393209_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487405817",
+    "name": "Nishikawa Shusaku",
+    "position": "GK",
+    "team": "Urawa Reds",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487405817_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487407066",
+    "name": "Shibasaki Gaku",
+    "position": "CMF",
+    "team": "Kashima Antlers",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487407066_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407929864",
+    "name": "Denilson",
+    "position": "LWF",
+    "team": "Brazil",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407929864_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88033407833794",
+    "name": "Jack Wilshere",
+    "position": "CMF",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88033407833794_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88045487517452",
+    "name": "Soma Yuki",
+    "position": "SS",
+    "team": "FC Machida Zelvia",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88045487517452_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87962004024416",
+    "name": "Bruno Fernandes",
+    "position": "AMF",
+    "team": "Manchester United",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87962004024416_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87962272534003",
+    "name": "Paul Gascoigne",
+    "position": "AMF",
+    "team": "Tottenham WB",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87962272534003_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "87963614581408",
+    "name": "Julio Cesar",
+    "position": "GK",
+    "team": "Internazionale Milano",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/87963614581408_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88029918294849",
+    "name": "Serginho",
+    "position": "CMF",
+    "team": "AC Milan",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88029918294849_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455006837",
+    "name": "Claudio Pizarro",
+    "position": "CF",
+    "team": "Munchen RW",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455006837_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455139768",
+    "name": "Gaizka Mendieta",
+    "position": "RMF",
+    "team": "FC Barcelona",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455139768_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455139858",
+    "name": "Freddie Ljungberg",
+    "position": "RMF",
+    "team": "Arsenal FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455139858_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030455143152",
+    "name": "Aldair",
+    "position": "CB",
+    "team": "Roma GR",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030455143152_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030723447048",
+    "name": "Per Mertesacker",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030723447048_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88030991876904",
+    "name": "David Seaman",
+    "position": "GK",
+    "team": "Arsenal FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88030991876904_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "88032334053585",
+    "name": "Takahara Naohiro",
+    "position": "CF",
+    "team": "Japan",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/88032334053585_l.png",
+    "cardType": "epic"
+  },
+  {
+    "id": "106653970182270",
+    "name": "Kylian Mbappe",
+    "position": "CF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106653970182270_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778255821223",
+    "name": "Erling Haaland",
+    "position": "CF",
+    "team": "Manchester B",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778255821223_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788187832737",
+    "name": "Manuel Neuer",
+    "position": "GK",
+    "team": "Germany",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788187832737_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765907789637",
+    "name": "Jude Bellingham",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765907789637_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768055185192",
+    "name": "Virgil van Dijk",
+    "position": "CB",
+    "team": "Liverpool R",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768055185192_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788724799833",
+    "name": "Michael Olise",
+    "position": "AMF",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788724799833_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788456363289",
+    "name": "Enzo Fernandez",
+    "position": "CMF",
+    "team": "Argentina",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788456363289_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788187843931",
+    "name": "Kevin De Bruyne",
+    "position": "AMF",
+    "team": "Belgium",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788187843931_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787919475376",
+    "name": "Cristian Romero",
+    "position": "CB",
+    "team": "Argentina",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787919475376_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787651035597",
+    "name": "Unai Simon",
+    "position": "GK",
+    "team": "Spain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787651035597_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786308879147",
+    "name": "Joao Pedro",
+    "position": "CF",
+    "team": "Chelsea B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786308879147_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356096959",
+    "name": "Suzuki Zion",
+    "position": "GK",
+    "team": "Japan",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356096959_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106773692401975",
+    "name": "Vinicius Junior",
+    "position": "LWF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106773692401975_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768055197475",
+    "name": "Mohamed Salah",
+    "position": "RWF",
+    "team": "Liverpool R",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768055197475_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106732621770975",
+    "name": "Rodri",
+    "position": "DMF",
+    "team": "Spain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106732621770975_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787919411383",
+    "name": "Harry Kane",
+    "position": "CF",
+    "team": "England",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787919411383_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782013894690",
+    "name": "Ousmane Dembele",
+    "position": "RWF",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782013894690_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778524258203",
+    "name": "Vitinha",
+    "position": "DMF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778524258203_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106654775417922",
+    "name": "Robert Lewandowski",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106654775417922_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786040448448",
+    "name": "Ronald Araujo",
+    "position": "CB",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786040448448_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106764028750090",
+    "name": "Arda Guler",
+    "position": "AMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106764028750090_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765907771610",
+    "name": "Eberechi Eze",
+    "position": "AMF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765907771610_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106758928448759",
+    "name": "Federico Valverde",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106758928448759_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799730668598",
+    "name": "Karim Adeyemi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799730668598_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799730641209",
+    "name": "Bruno Guimaraes",
+    "position": "DMF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799730641209_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799730583961",
+    "name": "Youri Tielemans",
+    "position": "CMF",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799730583961_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788187839904",
+    "name": "Neymar Jr",
+    "position": "LWF",
+    "team": "Brazil",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788187839904_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788187833650",
+    "name": "Luka Modric",
+    "position": "CMF",
+    "team": "Croatia",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788187833650_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787651090754",
+    "name": "Lamine Yamal",
+    "position": "RWF",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787651090754_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787651045215",
+    "name": "Marc Cucurella",
+    "position": "LB",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787651045215_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787651039542",
+    "name": "Dani Olmo",
+    "position": "AMF",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787651039542_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786577303471",
+    "name": "Dayot Upamecano",
+    "position": "CB",
+    "team": "France",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786577303471_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786577226938",
+    "name": "Romelu Lukaku",
+    "position": "CF",
+    "team": "Belgium",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786577226938_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786308889284",
+    "name": "Florian Wirtz",
+    "position": "AMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786308889284_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786308878577",
+    "name": "Jan Paul van Hecke",
+    "position": "CB",
+    "team": "Tottenham WB",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786308878577_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786040464076",
+    "name": "Maghnes Akliouche",
+    "position": "SS",
+    "team": "Paris Saint-Germain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786040464076_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785772021264",
+    "name": "Elliot Anderson",
+    "position": "CMF",
+    "team": "Manchester B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785772021264_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785772007373",
+    "name": "Morgan Rogers",
+    "position": "AMF",
+    "team": "Chelsea B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785772007373_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782819256128",
+    "name": "Pau Cubarsi",
+    "position": "CB",
+    "team": "Spain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782819256128_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782819217056",
+    "name": "Julian Alvarez",
+    "position": "CF",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782819217056_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782282337313",
+    "name": "Lisandro Martinez",
+    "position": "CB",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782282337313_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781476920663",
+    "name": "Lionel Messi",
+    "position": "CF",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781476920663_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778792723485",
+    "name": "Kenan Yildiz",
+    "position": "LMF",
+    "team": "Turkiye",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778792723485_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778524224656",
+    "name": "David Raya",
+    "position": "GK",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778524224656_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778255827359",
+    "name": "Hugo Ekitike",
+    "position": "CF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778255827359_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106777987393262",
+    "name": "Joan Garcia",
+    "position": "GK",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106777987393262_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106777182101070",
+    "name": "Nico Paz",
+    "position": "AMF",
+    "team": "Como 1907",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106777182101070_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106776645188904",
+    "name": "Achraf Hakimi",
+    "position": "RB",
+    "team": "Paris Saint-Germain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106776645188904_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106776645183223",
+    "name": "Gianluigi Donnarumma",
+    "position": "GK",
+    "team": "Manchester B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106776645183223_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106776376765788",
+    "name": "Mason Greenwood",
+    "position": "RMF",
+    "team": "Olympique de Marseille",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106776376765788_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106773155552016",
+    "name": "Jamal Musiala",
+    "position": "LMF",
+    "team": "Germany",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106773155552016_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106773155540934",
+    "name": "Viktor Gyokeres",
+    "position": "CF",
+    "team": "Sweden",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106773155540934_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768592119926",
+    "name": "Frenkie de Jong",
+    "position": "DMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768592119926_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768592071776",
+    "name": "Bruno Fernandes",
+    "position": "AMF",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768592071776_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765907789861",
+    "name": "Pedri",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765907789861_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763760282015",
+    "name": "Declan Rice",
+    "position": "CMF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763760282015_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763223432463",
+    "name": "Dominik Szoboszlai",
+    "position": "AMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763223432463_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763223426410",
+    "name": "Antoine Semenyo",
+    "position": "RWF",
+    "team": "Bournemouth RB",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763223426410_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106760002199005",
+    "name": "Bryan Mbeumo",
+    "position": "RWF",
+    "team": "Manchester United",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106760002199005_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106759733768760",
+    "name": "Bukayo Saka",
+    "position": "RWF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106759733768760_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106758928449823",
+    "name": "Ibrahima Konate",
+    "position": "CB",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106758928449823_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106738795813804",
+    "name": "Cole Palmer",
+    "position": "AMF",
+    "team": "Chelsea B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106738795813804_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106734500820152",
+    "name": "Ruben Dias",
+    "position": "CB",
+    "team": "Portugal",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106734500820152_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106653970117545",
+    "name": "Marquinhos",
+    "position": "CB",
+    "team": "Paris Saint-Germain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106653970117545_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799193770861",
+    "name": "Weston McKennie",
+    "position": "CMF",
+    "team": "United States",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799193770861_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106784698181293",
+    "name": "Casemiro",
+    "position": "DMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106784698181293_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106762955018895",
+    "name": "Suzuki Junnosuke",
+    "position": "RB",
+    "team": "Kobenhavn HB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106762955018895_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106742553898721",
+    "name": "William Saliba",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106742553898721_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106743090758023",
+    "name": "Alexander Isak",
+    "position": "CF",
+    "team": "Newcastle WB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106743090758023_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106743359189607",
+    "name": "Gabriel Magalhaes",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106743359189607_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106743359205469",
+    "name": "Ryan Gravenberch",
+    "position": "DMF",
+    "team": "Liverpool R",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106743359205469_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106744164503008",
+    "name": "V. Milinkovic-Savic",
+    "position": "GK",
+    "team": "Torino FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106744164503008_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106723494968891",
+    "name": "Federico Chiesa",
+    "position": "LWF",
+    "team": "Piemonte BN",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106723494968891_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106726447748898",
+    "name": "Bernardo Silva",
+    "position": "RMF",
+    "team": "Portugal",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106726447748898_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106729132107889",
+    "name": "Lautaro Martinez",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106729132107889_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106730205869134",
+    "name": "Eduardo Camavinga",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106730205869134_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106730474290556",
+    "name": "Ben White",
+    "position": "RB",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106730474290556_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106738258909413",
+    "name": "Antonio Rudiger",
+    "position": "CB",
+    "team": "Germany",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106738258909413_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782550788446",
+    "name": "Charles De Ketelaere",
+    "position": "CF",
+    "team": "Belgium",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782550788446_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106750875398684",
+    "name": "Jeremy Doku",
+    "position": "LWF",
+    "team": "Manchester B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106750875398684_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106759196889835",
+    "name": "Matheus Cunha",
+    "position": "AMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106759196889835_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765186378504",
+    "name": "Omar Marmoush",
+    "position": "CF",
+    "team": "Egypt",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765186378504_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799999082154",
+    "name": "Morita Hidemasa",
+    "position": "DMF",
+    "team": "Hull OB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799999082154_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799999081429",
+    "name": "Tomiyasu Takehiro",
+    "position": "CB",
+    "team": "Crystal Palace RB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799999081429_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799999081317",
+    "name": "Maeda Daizen",
+    "position": "SS",
+    "team": "Ipswich BW",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799999081317_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106798388457476",
+    "name": "Mikel Oyarzabal",
+    "position": "CF",
+    "team": "Vasco Gipuzkoa AB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106798388457476_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788993239598",
+    "name": "Riccardo Calafiori",
+    "position": "LB",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788993239598_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788724836718",
+    "name": "Ayyoub Bouaddi",
+    "position": "DMF",
+    "team": "Morocco",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788724836718_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788456409199",
+    "name": "Johan Manzambi",
+    "position": "AMF",
+    "team": "Switzerland",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788456409199_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106788187841133",
+    "name": "James Rodriguez",
+    "position": "RWF",
+    "team": "Colombia",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106788187841133_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787651045391",
+    "name": "Ferran Torres",
+    "position": "CF",
+    "team": "Spain",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787651045391_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785771992434",
+    "name": "Denzel Dumfries",
+    "position": "RB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785771992434_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106784161310028",
+    "name": "Antoine Griezmann",
+    "position": "CF",
+    "team": "Madrid Rosas RB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106784161310028_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356085451",
+    "name": "Ito Hiroki",
+    "position": "CB",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356085451_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356083208",
+    "name": "Kubo Takefusa",
+    "position": "AMF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356083208_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356067329",
+    "name": "Doan Ritsu",
+    "position": "RMF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356067329_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087658867",
+    "name": "Ueda Ayase",
+    "position": "CF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087658867_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087654662",
+    "name": "Sano Kaishu",
+    "position": "DMF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087654662_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087652853",
+    "name": "Kamada Daichi",
+    "position": "AMF",
+    "team": "Japan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087652853_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782013927260",
+    "name": "Moises Caicedo",
+    "position": "DMF",
+    "team": "Ecuador",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782013927260_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782013903764",
+    "name": "Leandro Trossard",
+    "position": "LMF",
+    "team": "Belgium",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782013903764_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781745473447",
+    "name": "Jonathan David",
+    "position": "CF",
+    "team": "Canada",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781745473447_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781745470620",
+    "name": "Cody Gakpo",
+    "position": "LWF",
+    "team": "Netherlands",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781745470620_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781745353130",
+    "name": "Cristiano Ronaldo",
+    "position": "CF",
+    "team": "Portugal",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781745353130_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781477040769",
+    "name": "Felix Nmecha",
+    "position": "DMF",
+    "team": "Germany",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781477040769_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106780940151245",
+    "name": "Joshua Kimmich",
+    "position": "DMF",
+    "team": "Germany",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106780940151245_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106776376796960",
+    "name": "Endrick",
+    "position": "CF",
+    "team": "Olympique Lyonnais",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106776376796960_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106776376791946",
+    "name": "Willian Pacho",
+    "position": "CB",
+    "team": "Paris Saint-Germain",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106776376791946_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106772887089344",
+    "name": "Jules Kounde",
+    "position": "RB",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106772887089344_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106772618646508",
+    "name": "Martin Odegaard",
+    "position": "CMF",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106772618646508_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106770471216611",
+    "name": "Semih Kilicsoy",
+    "position": "CF",
+    "team": "Cagliari RB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106770471216611_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768592137310",
+    "name": "Reece James",
+    "position": "RB",
+    "team": "Chelsea B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768592137310_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763760292838",
+    "name": "Aurelien Tchouameni",
+    "position": "DMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763760292838_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763491879812",
+    "name": "Nick Woltemade",
+    "position": "CF",
+    "team": "Newcastle WB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763491879812_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106763491781983",
+    "name": "Thibaut Courtois",
+    "position": "GK",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106763491781983_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106762955019322",
+    "name": "Sano Kodai",
+    "position": "CMF",
+    "team": "N.E.C. Nijmegen",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106762955019322_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106762686548319",
+    "name": "Pedro Neto",
+    "position": "LMF",
+    "team": "Chelsea B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106762686548319_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106760002235412",
+    "name": "Kobbie Mainoo",
+    "position": "CMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106760002235412_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106760002221112",
+    "name": "Benjamin Sesko",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106760002221112_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106759465365080",
+    "name": "Joao Neves",
+    "position": "CMF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106759465365080_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106759465339413",
+    "name": "Rayan Cherki",
+    "position": "AMF",
+    "team": "Manchester B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106759465339413_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106750338536440",
+    "name": "Micky van de Ven",
+    "position": "CB",
+    "team": "Tottenham WB",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106750338536440_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106750338532448",
+    "name": "Josko Gvardiol",
+    "position": "LB",
+    "team": "Manchester B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106750338532448_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106750070068486",
+    "name": "Nicolo Barella",
+    "position": "DMF",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106750070068486_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106749533208454",
+    "name": "Brahim Diaz",
+    "position": "AMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106749533208454_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106744164492837",
+    "name": "Marcus Thuram",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106744164492837_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106741211713905",
+    "name": "Rafael Leao",
+    "position": "LMF",
+    "team": "Portugal",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106741211713905_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106737990509510",
+    "name": "Kerem Akturkoglu",
+    "position": "LWF",
+    "team": "Turkiye",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106737990509510_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106733158650049",
+    "name": "Rodrygo",
+    "position": "RWF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106733158650049_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106731279490391",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "Argentina",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106731279490391_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106780940156328",
+    "name": "Ferdi Kadioglu",
+    "position": "LB",
+    "team": "Turkiye",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106780940156328_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106786040363689",
+    "name": "John Stones",
+    "position": "CB",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106786040363689_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106784966581591",
+    "name": "Lionel Messi",
+    "position": "SS",
+    "team": "Argentina",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106784966581591_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761092659319",
+    "name": "Fabinho",
+    "position": "DMF",
+    "team": "Al Ittihad Club",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761092659319_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106753291337609",
+    "name": "Jobe Bellingham",
+    "position": "CMF",
+    "team": "Borussia Dortmund",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106753291337609_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106754096599541",
+    "name": "Leroy Sane",
+    "position": "RWF",
+    "team": "Galatasaray SK",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106754096599541_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106743090769804",
+    "name": "Mitoma Kaoru",
+    "position": "LWF",
+    "team": "Brighton WB",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106743090769804_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106745775115778",
+    "name": "Tijjani Reijnders",
+    "position": "CMF",
+    "team": "Manchester B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106745775115778_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106653433237410",
+    "name": "Toni Kroos",
+    "position": "CMF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106653433237410_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106653164826909",
+    "name": "Riyad Mahrez",
+    "position": "RWF",
+    "team": "Manchester B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106653164826909_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106729132110484",
+    "name": "Theo Hernandez",
+    "position": "LB",
+    "team": "AC Milan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106729132110484_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106743627624500",
+    "name": "Raphinha",
+    "position": "LMF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106743627624500_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799462259226",
+    "name": "Vozinha",
+    "position": "GK",
+    "team": "Santiago B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799462259226_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799193796011",
+    "name": "Francisco Conceicao",
+    "position": "RWF",
+    "team": "Portugal",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799193796011_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106798388494170",
+    "name": "Giuliano Simeone",
+    "position": "RMF",
+    "team": "Madrid Rosas RB",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106798388494170_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106798388478166",
+    "name": "Marc Guehi",
+    "position": "CB",
+    "team": "Manchester B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106798388478166_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106798388461815",
+    "name": "Morgan Gibbs-White",
+    "position": "AMF",
+    "team": "Nottingham RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106798388461815_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106798388454829",
+    "name": "Manuel Locatelli",
+    "position": "DMF",
+    "team": "Piemonte BN",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106798388454829_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106787114104779",
+    "name": "Adrien Rabiot",
+    "position": "CMF",
+    "team": "France",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106787114104779_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503587053",
+    "name": "Gregor Kobel",
+    "position": "GK",
+    "team": "Switzerland",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503587053_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503488127",
+    "name": "Mateo Kovacic",
+    "position": "CMF",
+    "team": "Croatia",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503488127_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785235123572",
+    "name": "James Maddison",
+    "position": "AMF",
+    "team": "Tottenham WB",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785235123572_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356088205",
+    "name": "Watanabe Tsuyoshi",
+    "position": "CB",
+    "team": "Japan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356088205_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783356022615",
+    "name": "Taniguchi Shogo",
+    "position": "CB",
+    "team": "Japan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783356022615_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087650006",
+    "name": "Nakamura Keito",
+    "position": "LMF",
+    "team": "Japan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087650006_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087647748",
+    "name": "Ito Junya",
+    "position": "AMF",
+    "team": "Japan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087647748_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106782282354314",
+    "name": "Goncalo Ramos",
+    "position": "CF",
+    "team": "Portugal",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106782282354314_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106781208610214",
+    "name": "Gabriel Martinelli",
+    "position": "LWF",
+    "team": "Brazil",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106781208610214_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106780940205246",
+    "name": "Nico O Reilly",
+    "position": "LB",
+    "team": "England",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106780940205246_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106780940156345",
+    "name": "Matthijs de Ligt",
+    "position": "CB",
+    "team": "Netherlands",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106780940156345_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106780671726691",
+    "name": "Luis Diaz",
+    "position": "LWF",
+    "team": "Colombia",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106780671726691_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106779866307927",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "Argentina",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106779866307927_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106779597991855",
+    "name": "Victor Osimhen",
+    "position": "CF",
+    "team": "Galatasaray SK",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106779597991855_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106778792685399",
+    "name": "Merih Demiral",
+    "position": "CB",
+    "team": "Turkiye",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106778792685399_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106773960836927",
+    "name": "Alexis Mac Allister",
+    "position": "CMF",
+    "team": "Argentina",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106773960836927_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106772887125793",
+    "name": "Alejandro Balde",
+    "position": "LB",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106772887125793_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106771813384691",
+    "name": "Bradley Barcola",
+    "position": "LWF",
+    "team": "France",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106771813384691_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106770471185881",
+    "name": "Lee Kang-In",
+    "position": "RWF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106770471185881_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106769665885243",
+    "name": "Jurrien Timber",
+    "position": "RB",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106769665885243_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106769397419872",
+    "name": "Serhou Guirassy",
+    "position": "CF",
+    "team": "Borussia Dortmund",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106769397419872_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106769129043724",
+    "name": "Fermin Lopez",
+    "position": "AMF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106769129043724_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106767786806011",
+    "name": "Jack Grealish",
+    "position": "LWF",
+    "team": "Everton B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106767786806011_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766981558114",
+    "name": "Dean Huijsen",
+    "position": "CB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766981558114_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766444664616",
+    "name": "Xavi Simons",
+    "position": "AMF",
+    "team": "Netherlands",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766444664616_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766444571720",
+    "name": "Jan Oblak",
+    "position": "GK",
+    "team": "Slovenia",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766444571720_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766176135223",
+    "name": "Son Heung-Min",
+    "position": "CF",
+    "team": "Los Angeles BY",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766176135223_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766176132874",
+    "name": "Thomas Muller",
+    "position": "AMF",
+    "team": "Vancouver BW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766176132874_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766176130728",
+    "name": "Sergio Busquets",
+    "position": "DMF",
+    "team": "Miami BP",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766176130728_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765454779807",
+    "name": "Franck Kessie",
+    "position": "CMF",
+    "team": "Cote d Ivoire",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765454779807_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106764565597595",
+    "name": "Sandro Tonali",
+    "position": "CMF",
+    "team": "Newcastle WB",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106764565597595_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106757586204383",
+    "name": "Ederson Moraes",
+    "position": "GK",
+    "team": "Fenerbahce SK",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106757586204383_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106754365099263",
+    "name": "Estevao",
+    "position": "RWF",
+    "team": "Chelsea B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106754365099263_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106752217564110",
+    "name": "Tanaka Ao",
+    "position": "CMF",
+    "team": "Leeds W",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106752217564110_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106752217464922",
+    "name": "Endo Wataru",
+    "position": "DMF",
+    "team": "Liverpool R",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106752217464922_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106750338463730",
+    "name": "Alisson Becker",
+    "position": "GK",
+    "team": "Liverpool R",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106750338463730_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106748996323135",
+    "name": "Jamie Vardy",
+    "position": "CF",
+    "team": "Leicester B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106748996323135_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106748459484820",
+    "name": "Nuno Mendes",
+    "position": "LB",
+    "team": "Portugal",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106748459484820_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106746580456800",
+    "name": "Desire Doue",
+    "position": "SS",
+    "team": "Paris Saint-Germain",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106746580456800_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106745775110909",
+    "name": "T. Alexander-Arnold",
+    "position": "RB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106745775110909_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106734785968811",
+    "name": "Joao Cancelo",
+    "position": "RB",
+    "team": "Al Hilal SFC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106734785968811_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106734500820728",
+    "name": "Jonathan Tah",
+    "position": "CB",
+    "team": "Germany",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106734500820728_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106732084936483",
+    "name": "Gavi",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106732084936483_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106729400576949",
+    "name": "Nico Williams",
+    "position": "LWF",
+    "team": "Bilbao BR",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106729400576949_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106728595243128",
+    "name": "Phil Foden",
+    "position": "RMF",
+    "team": "Manchester B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106728595243128_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106721884302367",
+    "name": "Mike Maignan",
+    "position": "GK",
+    "team": "AC Milan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106721884302367_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106654507071184",
+    "name": "K. Kvaratskhelia",
+    "position": "LWF",
+    "team": "Napoli A",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106654507071184_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106654507051839",
+    "name": "S. Milinkovic-Savic",
+    "position": "CMF",
+    "team": "S.S. Lazio",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106654507051839_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106654238621670",
+    "name": "Alessandro Bastoni",
+    "position": "CB",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106654238621670_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106652896443253",
+    "name": "Eder Militao",
+    "position": "CB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106652896443253_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106799193700770",
+    "name": "Aymeric Laporte",
+    "position": "CB",
+    "team": "Spain",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106799193700770_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106797935502918",
+    "name": "Nicolas Jackson",
+    "position": "CF",
+    "team": "Senegal",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106797935502918_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106730474235970",
+    "name": "Jorginho",
+    "position": "DMF",
+    "team": "Arsenal FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106730474235970_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106738527300583",
+    "name": "Rafa Silva",
+    "position": "AMF",
+    "team": "Besiktas JK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106738527300583_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106760270552451",
+    "name": "P. E. Aubameyang",
+    "position": "CF",
+    "team": "Olympique de Marseille",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106760270552451_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761092731496",
+    "name": "Arif Aiman",
+    "position": "RMF",
+    "team": "Johor Darul Ta zim FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761092731496_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106764917911559",
+    "name": "Ademola Lookman",
+    "position": "AMF",
+    "team": "Nigeria",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106764917911559_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106753828209219",
+    "name": "Takai Kota",
+    "position": "CB",
+    "team": "Tottenham WB",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106753828209219_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106730474291018",
+    "name": "Kai Havertz",
+    "position": "CF",
+    "team": "Arsenal FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106730474291018_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106729954183936",
+    "name": "Malcom",
+    "position": "RWF",
+    "team": "Al Hilal SFC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106729954183936_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106727253055244",
+    "name": "Ruben Neves",
+    "position": "DMF",
+    "team": "Portugal",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106727253055244_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106729132046411",
+    "name": "Paulo Dybala",
+    "position": "AMF",
+    "team": "Roma GR",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106729132046411_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106723780168662",
+    "name": "N Golo Kante",
+    "position": "DMF",
+    "team": "Al Ittihad Club",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106723780168662_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106794898793896",
+    "name": "Leo Ceara",
+    "position": "CF",
+    "team": "Kashima Antlers",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106794898793896_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793825057470",
+    "name": "Marlon Freitas",
+    "position": "CMF",
+    "team": "SE Palmeiras",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793825057470_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793825048655",
+    "name": "Gerson",
+    "position": "CMF",
+    "team": "Cruzeiro EC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793825048655_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793825077033",
+    "name": "Samuel Lino",
+    "position": "LWF",
+    "team": "CR Flamengo",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793825077033_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793288194328",
+    "name": "Vedat Muriqi",
+    "position": "CF",
+    "team": "Fenerbahce SK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793288194328_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503578291",
+    "name": "Noni Madueke",
+    "position": "RWF",
+    "team": "England",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503578291_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503555830",
+    "name": "Alexander Sorloth",
+    "position": "CF",
+    "team": "Norway",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503555830_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503548605",
+    "name": "Mikel Merino",
+    "position": "AMF",
+    "team": "Spain",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503548605_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106785503491871",
+    "name": "Memphis Depay",
+    "position": "SS",
+    "team": "Netherlands",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106785503491871_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783087647510",
+    "name": "Ogawa Koki",
+    "position": "CF",
+    "team": "Japan",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783087647510_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106779597985415",
+    "name": "Paul Onuachu",
+    "position": "CF",
+    "team": "Trabzonspor",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106779597985415_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106779597968380",
+    "name": "Marco Asensio",
+    "position": "AMF",
+    "team": "Fenerbahce SK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106779597968380_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106779061108686",
+    "name": "Matteo Guendouzi",
+    "position": "CMF",
+    "team": "Fenerbahce SK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106779061108686_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106777450514613",
+    "name": "Darwin Nunez",
+    "position": "CF",
+    "team": "Uruguay",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106777450514613_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106771293270235",
+    "name": "Eliano Reijnders",
+    "position": "LB",
+    "team": "Persib Bandung",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106771293270235_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106771008054113",
+    "name": "Orkun Kokcu",
+    "position": "AMF",
+    "team": "Besiktas JK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106771008054113_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106770202684241",
+    "name": "Rodrigo De Paul",
+    "position": "CMF",
+    "team": "Argentina",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106770202684241_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106769934330781",
+    "name": "Nico Schlotterbeck",
+    "position": "CB",
+    "team": "Germany",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106769934330781_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768860487291",
+    "name": "David de Gea",
+    "position": "GK",
+    "team": "Firenze V",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768860487291_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106767518381244",
+    "name": "Lucas Paqueta",
+    "position": "AMF",
+    "team": "Brazil",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106767518381244_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766981509166",
+    "name": "Marcus Rashford",
+    "position": "LWF",
+    "team": "FC Barcelona",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766981509166_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106766176132585",
+    "name": "Jordi Alba",
+    "position": "LB",
+    "team": "Miami BP",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106766176132585_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765454795104",
+    "name": "Rayan Ait-Nouri",
+    "position": "LB",
+    "team": "Algeria",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765454795104_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765186342826",
+    "name": "Alex Iwobi",
+    "position": "AMF",
+    "team": "Nigeria",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765186342826_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106764917945800",
+    "name": "Hamdy Fathy",
+    "position": "DMF",
+    "team": "Egypt",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106764917945800_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106762149661348",
+    "name": "Andrew Robertson",
+    "position": "LB",
+    "team": "Scotland",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106762149661348_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106762149600615",
+    "name": "Jordan Henderson",
+    "position": "DMF",
+    "team": "England",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106762149600615_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761881289891",
+    "name": "Ivar Jenner",
+    "position": "DMF",
+    "team": "Indonesia",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761881289891_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761881282574",
+    "name": "Seksan Ratree",
+    "position": "CMF",
+    "team": "Thailand",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761881282574_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761881238104",
+    "name": "Dion Cools",
+    "position": "RB",
+    "team": "Malaysia",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761881238104_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761092722444",
+    "name": "Soma Yuki",
+    "position": "AMF",
+    "team": "FC Machida Zelvia",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761092722444_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106760807496569",
+    "name": "Guilherme Bissoli",
+    "position": "CF",
+    "team": "Buriram United F.C.",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106760807496569_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106757586221077",
+    "name": "Talisca",
+    "position": "AMF",
+    "team": "Fenerbahce SK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106757586221077_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106753559668284",
+    "name": "Isco",
+    "position": "AMF",
+    "team": "Sevilla Triana VB",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106753559668284_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106748727910680",
+    "name": "Zeki Celik",
+    "position": "RB",
+    "team": "Turkiye",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106748727910680_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106747654053207",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "Argentina",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106747654053207_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106739869539932",
+    "name": "Kim Min-Jae",
+    "position": "CB",
+    "team": "Munchen RW",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106739869539932_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106738795814310",
+    "name": "Savinho",
+    "position": "LWF",
+    "team": "Manchester B",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106738795814310_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106737453559252",
+    "name": "Serge Gnabry",
+    "position": "RMF",
+    "team": "Germany",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106737453559252_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106735843042971",
+    "name": "Warren Zaire-Emery",
+    "position": "CMF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106735843042971_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106735574597166",
+    "name": "Baris Alper Yilmaz",
+    "position": "RWF",
+    "team": "Galatasaray SK",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106735574597166_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106734786026053",
+    "name": "Roberto Firmino",
+    "position": "CF",
+    "team": "Al Ahli Saudi FC",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106734786026053_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106653433246643",
+    "name": "Marco Verratti",
+    "position": "CMF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106653433246643_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106652896368901",
+    "name": "Thiago Silva",
+    "position": "CB",
+    "team": "Chelsea B",
+    "overallRating": 83,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106652896368901_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106797935481937",
+    "name": "Noussair Mazraoui",
+    "position": "LB",
+    "team": "Morocco",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106797935481937_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106740406335670",
+    "name": "Jordan Pickford",
+    "position": "GK",
+    "team": "England",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106740406335670_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106741748512301",
+    "name": "Mauro Icardi",
+    "position": "CF",
+    "team": "Galatasaray SK",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106741748512301_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106741748591999",
+    "name": "Gedson Fernandes",
+    "position": "CMF",
+    "team": "Besiktas JK",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106741748591999_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106761092718202",
+    "name": "Suphanat Mueanta",
+    "position": "LWF",
+    "team": "Buriram United F.C.",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106761092718202_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106768323680420",
+    "name": "Davinson Sanchez",
+    "position": "CB",
+    "team": "Galatasaray SK",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106768323680420_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106783624536797",
+    "name": "Chrigor",
+    "position": "CF",
+    "team": "Selangor FC",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106783624536797_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106765454774629",
+    "name": "Kalidou Koulibaly",
+    "position": "CB",
+    "team": "Senegal",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106765454774629_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793556628757",
+    "name": "K. Viveros",
+    "position": "CF",
+    "team": "Athletico Paranaense",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793556628757_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106744969733514",
+    "name": "Dusan Tadic",
+    "position": "AMF",
+    "team": "Fenerbahce SK",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106744969733514_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106758173516441",
+    "name": "Ricky Kambuaya",
+    "position": "AMF",
+    "team": "Indonesia",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106758173516441_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106722958026838",
+    "name": "Alvaro Morata",
+    "position": "CF",
+    "team": "Madrid Rosas RB",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106722958026838_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106755438720293",
+    "name": "Everton Ribeiro",
+    "position": "AMF",
+    "team": "EC Bahia",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106755438720293_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106744969732202",
+    "name": "Ciro Immobile",
+    "position": "CF",
+    "team": "Besiktas JK",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106744969732202_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106742016943293",
+    "name": "Enner Valencia",
+    "position": "CF",
+    "team": "SC Internacional",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106742016943293_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106794898805710",
+    "name": "Carlinhos Junior",
+    "position": "CF",
+    "team": "RB Omiya Ardija",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106794898805710_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106794898821087",
+    "name": "Murakoshi Kaiga",
+    "position": "LMF",
+    "team": "Tegevajaro Miyazaki",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106794898821087_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106793825070277",
+    "name": "Carlos Vinicius",
+    "position": "CF",
+    "team": "Gremio FBPA",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106793825070277_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106794898838160",
+    "name": "Suzuki Akito",
+    "position": "SS",
+    "team": "Sanfrecce Hiroshima",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106794898838160_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106797935535829",
+    "name": "Ibrahim Maza",
+    "position": "AMF",
+    "team": "Algeria",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106797935535829_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "106797935500212",
+    "name": "Calvin Bassey",
+    "position": "CB",
+    "team": "Nigeria",
+    "overallRating": 82,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/106797935500212_l.png",
+    "cardType": "showtime"
+  },
+  {
+    "id": "89138556575063",
+    "name": "Lionel Messi",
+    "position": "SS",
+    "team": "Argentina",
+    "overallRating": 90,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556575063_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89136409091415",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89136409091415_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89062052470103",
+    "name": "Lionel Messi",
+    "position": "AMF",
+    "team": "Argentina",
+    "overallRating": 89,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89062052470103_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89133456301399",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89133456301399_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138288136169",
+    "name": "Andres Iniesta",
+    "position": "LMF",
+    "team": "Spain",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138288136169_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89137214427270",
+    "name": "Eden Hazard",
+    "position": "AMF",
+    "team": "Belgium",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89137214427270_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89136677522134",
+    "name": "George Best",
+    "position": "RWF",
+    "team": "Manchester United",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89136677522134_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89136140651034",
+    "name": "Zlatan Ibrahimovic",
+    "position": "CF",
+    "team": "AC Milan",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89136140651034_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89133724764840",
+    "name": "Gareth Bale",
+    "position": "RWF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 88,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89133724764840_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89139630444046",
+    "name": "Alessandro Del Piero",
+    "position": "CF",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89139630444046_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89060978855375",
+    "name": "Romario",
+    "position": "CF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89060978855375_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89061515600624",
+    "name": "Karim Benzema",
+    "position": "CF",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89061515600624_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89061784067488",
+    "name": "Neymar Jr",
+    "position": "LWF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89061784067488_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89063394774510",
+    "name": "Zico",
+    "position": "AMF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89063394774510_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129429769559",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129429769559_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89133187865943",
+    "name": "Lionel Messi",
+    "position": "CF",
+    "team": "Argentina",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89133187865943_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019757152",
+    "name": "Bruno Fernandes",
+    "position": "AMF",
+    "team": "Manchester United",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019757152_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019858754",
+    "name": "Lamine Yamal",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019858754_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138288133079",
+    "name": "Gianluigi Buffon",
+    "position": "GK",
+    "team": "Italy",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138288133079_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138288138433",
+    "name": "Philipp Lahm",
+    "position": "RB",
+    "team": "Germany",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138288138433_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138288266704",
+    "name": "Ronaldinho Gaucho",
+    "position": "AMF",
+    "team": "Brazil",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138288266704_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138288270047",
+    "name": "Marcel Desailly",
+    "position": "CB",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138288270047_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138556572074",
+    "name": "Cristiano Ronaldo",
+    "position": "CF",
+    "team": "Portugal",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556572074_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138556678270",
+    "name": "Kylian Mbappe",
+    "position": "CF",
+    "team": "France",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556678270_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138556678367",
+    "name": "Rodri",
+    "position": "DMF",
+    "team": "Spain",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556678367_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138556700485",
+    "name": "Jude Bellingham",
+    "position": "AMF",
+    "team": "England",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556700485_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138556701095",
+    "name": "Erling Haaland",
+    "position": "CF",
+    "team": "Norway",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138556701095_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129698205015",
+    "name": "Lionel Messi",
+    "position": "CF",
+    "team": "Argentina",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129698205015_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89134261635137",
+    "name": "Luis Suarez",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 87,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89134261635137_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89063126342373",
+    "name": "Fabio Cannavaro",
+    "position": "CB",
+    "team": "Italy",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89063126342373_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89065005387197",
+    "name": "Patrick Vieira",
+    "position": "DMF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89065005387197_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89067958050135",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "Argentina",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89067958050135_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129161334103",
+    "name": "Lionel Messi",
+    "position": "RWF",
+    "team": "FC Barcelona",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129161334103_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132919465292",
+    "name": "Antoine Griezmann",
+    "position": "SS",
+    "team": "France",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132919465292_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135066963747",
+    "name": "Mohamed Salah",
+    "position": "RMF",
+    "team": "Liverpool R",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135066963747_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135067044780",
+    "name": "Cole Palmer",
+    "position": "RMF",
+    "team": "Chelsea B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135067044780_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019805599",
+    "name": "Declan Rice",
+    "position": "CMF",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019805599_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019807847",
+    "name": "Gabriel Magalhaes",
+    "position": "CB",
+    "team": "Arsenal FC",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019807847_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019820906",
+    "name": "Antoine Semenyo",
+    "position": "LMF",
+    "team": "Manchester B",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019820906_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019825360",
+    "name": "K. Kvaratskhelia",
+    "position": "LWF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019825360_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89138019804326",
+    "name": "Federico Dimarco",
+    "position": "LMF",
+    "team": "Internazionale Milano",
+    "overallRating": 86,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89138019804326_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135067039781",
+    "name": "Pedri",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135067039781_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89137029898200",
+    "name": "Sadio Mane",
+    "position": "LWF",
+    "team": "Senegal",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89137029898200_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129966741622",
+    "name": "Frenkie de Jong",
+    "position": "CMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129966741622_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89130772048333",
+    "name": "Joshua Kimmich",
+    "position": "DMF",
+    "team": "Munchen RW",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89130772048333_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89061247290863",
+    "name": "Diego Maradona",
+    "position": "SS",
+    "team": "Argentina",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89061247290863_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89063931645407",
+    "name": "Ruud van Nistelrooij",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89063931645407_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89064200084194",
+    "name": "Claude Makelele",
+    "position": "DMF",
+    "team": "Chelsea B",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89064200084194_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89064468384045",
+    "name": "Hristo Stoichkov",
+    "position": "SS",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89064468384045_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89064736951784",
+    "name": "Frank Rijkaard",
+    "position": "DMF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89064736951784_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89065273822644",
+    "name": "Steven Gerrard",
+    "position": "CMF",
+    "team": "Liverpool R",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89065273822644_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89066347431386",
+    "name": "Samuel Eto o",
+    "position": "CF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89066347431386_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89067421306306",
+    "name": "Paolo Maldini",
+    "position": "CB",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89067421306306_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89067689741763",
+    "name": "Francesco Totti",
+    "position": "AMF",
+    "team": "Roma GR",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89067689741763_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89072253144526",
+    "name": "Rivaldo",
+    "position": "AMF",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89072253144526_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89073326886422",
+    "name": "Michael Owen",
+    "position": "CF",
+    "team": "Liverpool R",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89073326886422_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89073863757293",
+    "name": "K. Heinz Rummenigge",
+    "position": "CF",
+    "team": "Munchen RW",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89073863757293_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89074132192745",
+    "name": "Marco van Basten",
+    "position": "CF",
+    "team": "Netherlands",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89074132192745_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129966765504",
+    "name": "Ronald Araujo",
+    "position": "RB",
+    "team": "FC Barcelona",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129966765504_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89131308929393",
+    "name": "Rafael Leao",
+    "position": "LMF",
+    "team": "AC Milan",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89131308929393_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89131577378214",
+    "name": "Gabriel Martinelli",
+    "position": "LWF",
+    "team": "Arsenal FC",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89131577378214_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132382660721",
+    "name": "Lautaro Martinez",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132382660721_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132651030189",
+    "name": "Casemiro",
+    "position": "DMF",
+    "team": "Manchester United",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132651030189_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135066951464",
+    "name": "Virgil van Dijk",
+    "position": "CB",
+    "team": "Liverpool R",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135066951464_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135067017250",
+    "name": "Ousmane Dembele",
+    "position": "CF",
+    "team": "Paris Saint-Germain",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135067017250_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135067023229",
+    "name": "Scott McTominay",
+    "position": "CMF",
+    "team": "Napoli A",
+    "overallRating": 85,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135067023229_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132651102396",
+    "name": "Aaron Wan-Bissaka",
+    "position": "RB",
+    "team": "Manchester United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132651102396_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132651028391",
+    "name": "Christian Eriksen",
+    "position": "DMF",
+    "team": "Manchester United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132651028391_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89074400628164",
+    "name": "Filippo Inzaghi",
+    "position": "CF",
+    "team": "AC Milan",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89074400628164_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89063663209957",
+    "name": "Lothar Matthaus",
+    "position": "CMF",
+    "team": "Germany",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89063663209957_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89065542187382",
+    "name": "Raul",
+    "position": "CF",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89065542187382_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89066615870262",
+    "name": "Wesley Sneijder",
+    "position": "AMF",
+    "team": "Netherlands",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89066615870262_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89066884435465",
+    "name": "Adriano",
+    "position": "CF",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89066884435465_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89069568702539",
+    "name": "Paulo Dybala",
+    "position": "SS",
+    "team": "Roma GR",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89069568702539_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89069837151262",
+    "name": "Kingsley Coman",
+    "position": "LWF",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89069837151262_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89071984709041",
+    "name": "David Beckham",
+    "position": "RMF",
+    "team": "Manchester United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89071984709041_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89072790015452",
+    "name": "Frank Lampard",
+    "position": "AMF",
+    "team": "Chelsea B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89072790015452_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89073058450936",
+    "name": "Esteban Cambiasso",
+    "position": "DMF",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89073058450936_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89073595321804",
+    "name": "Roberto Carlos",
+    "position": "LB",
+    "team": "Madrid Chamartin B",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89073595321804_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89129966766175",
+    "name": "Ansu Fati",
+    "position": "LWF",
+    "team": "FC Barcelona",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89129966766175_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89130771980042",
+    "name": "Thomas Muller",
+    "position": "AMF",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89130771980042_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89130772069289",
+    "name": "Alphonso Davies",
+    "position": "LB",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89130772069289_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89130772077328",
+    "name": "Jamal Musiala",
+    "position": "AMF",
+    "team": "Munchen RW",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89130772077328_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89131577360202",
+    "name": "Kai Havertz",
+    "position": "CF",
+    "team": "Arsenal FC",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89131577360202_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132382653161",
+    "name": "Hakan Calhanoglu",
+    "position": "CMF",
+    "team": "Internazionale Milano",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132382653161_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89132651035231",
+    "name": "Anthony Martial",
+    "position": "CF",
+    "team": "Manchester United",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89132651035231_l.png",
+    "cardType": "bigtime"
+  },
+  {
+    "id": "89135067033519",
+    "name": "Victor Osimhen",
+    "position": "CF",
+    "team": "Galatasaray SK",
+    "overallRating": 84,
+    "imageUrl": "https://efimg.com/efootballhub22/images/player_cards/89135067033519_l.png",
+    "cardType": "bigtime"
+  }
+]
