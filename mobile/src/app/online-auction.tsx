@@ -208,62 +208,177 @@ function CoachScreen({ budget, onSelect }: { budget: number; onSelect: (bonus: n
   );
 }
 
-function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonus, coachName, opponentName, onFinish }: any) {
+function MatchScreen({
+  myTeam, aiTeam, myBudget, aiBudget, allPlayers,
+  coachBonus, coachName, opponentName,
+  isBot, roomRef, roomData, uid, oppUid, myRole,
+  onFinish
+}: any) {
   const myPlayers = Object.values(myTeam).filter(n => n && n !== "—") as string[];
   const aiPlayers = Object.values(aiTeam).filter(n => n && n !== "—") as string[];
-
-  const calcAvgRating = (players: string[], allP: any[]) => {
-    if (players.length === 0) return 75;
-    const ratings = players.map(name => {
-      const p = allP.find((x: any) => x.name === name);
-      return p ? p.rating : 78;
-    });
-    return ratings.reduce((a, b) => a + b, 0) / ratings.length;
-  };
-
-  const simGoals = (players: string[], allP: any[], bonus = 0) => {
-    let goals = 0;
-    players.forEach(name => {
-      const p = allP.find((x: any) => x.name === name);
-      const rating = p ? p.rating : 78;
-      const baseChance = Math.max(0.05, (rating - 70) / 120);
-      const boostedChance = Math.min(0.9, baseChance * (1 + bonus));
-      if (Math.random() < boostedChance) goals++;
-    });
-    if (Math.random() < 0.12) goals++; 
-    return goals;
-  };
-
   const bonus = coachBonus ?? 0;
-  const [matchData, setMatchData] = useState<{ myGoals: number; aiGoals: number; commentary: string } | null>(null);
 
-  useEffect(() => {
-    async function simulate() {
-      const normalize = (p: any) => ({ name: p.name, rating: p.overallRating || p.rating || 78, position: p.position });
-      const myPlayerObjects = myPlayers.map(name => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
-      const aiPlayerObjects = aiPlayers.map(name => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
-      
-      const res = await getMatchResult("فريقك", myPlayerObjects, bonus, opponentName, aiPlayerObjects, 0);
-      setMatchData({ myGoals: res.teamAGoals, aiGoals: res.teamBGoals, commentary: res.commentary });
-    }
-    simulate();
-  }, []);
-
+  const [matchData, setMatchData] = useState<{ myGoals: number; aiGoals: number; commentary: string; events: any[] } | null>(null);
   const [progress, setProgress] = useState(0);
   const [events, setEvents] = useState<any[]>([]);
   const [done, setDone] = useState(false);
   const progressAnim = useRef(new Animated.Value(0)).current;
 
+  // 1. تسجيل مدرب اللاعب في Firebase
+  useEffect(() => {
+    if (isBot || !roomRef?.current || !uid) return;
+    update(roomRef.current, {
+      [`game/coaches/${uid}`]: { coachName: coachName || "بدون مدرب", coachBonus: bonus }
+    }).catch(() => {});
+  }, [isBot, uid, bonus, coachName]);
+
+  // 2. إذا كنا ضد البوت (isBot) نحاكي محلياً
+  useEffect(() => {
+    if (!isBot) return;
+    async function simulateBot() {
+      const normalize = (p: any) => ({ name: p.name, rating: p.overallRating || p.rating || 78, position: p.position });
+      const myPlayerObjects = myPlayers.map(name => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+      const aiPlayerObjects = aiPlayers.map(name => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+      
+      const res = await getMatchResult("فريقك", myPlayerObjects, bonus, opponentName, aiPlayerObjects, 0);
+      const myG = res.teamAGoals ?? 0;
+      const aiG = res.teamBGoals ?? 0;
+
+      const myMins = Array.from({ length: myG }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      const aiMins = Array.from({ length: aiG }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      const evs: any[] = [];
+      myMins.forEach(min => evs.push({ min, scorer: myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعبك", team: "me" }));
+      aiMins.forEach(min => evs.push({ min, scorer: aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "opp", team: "ai" }));
+      const allEvs = evs.sort((a, b) => a.min - b.min);
+
+      setMatchData({ myGoals: myG, aiGoals: aiG, commentary: res.commentary, events: allEvs });
+    }
+    simulateBot();
+  }, [isBot]);
+
+  // 3. أونلاين: المضيف (player1) يحاكي النتيجة ويرفعها مرة واحدة فقط لـ Firebase
+  useEffect(() => {
+    if (isBot || !roomRef?.current || !roomData?.game) return;
+    if (roomData.game.matchResult) return;
+    if (myRole !== "player1") return;
+
+    let isCancelled = false;
+    async function simulateOnline() {
+      const normalize = (p: any) => ({ name: p.name, rating: p.overallRating || p.rating || 78, position: p.position });
+      const hostPlayers = myPlayers.map((name: string) => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+      const guestPlayers = aiPlayers.map((name: string) => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+      
+      const hostBonus = bonus;
+      const guestBonus = roomData?.game?.coaches?.[oppUid]?.coachBonus ?? 0;
+
+      const res = await getMatchResult("فريقك", hostPlayers, hostBonus, opponentName, guestPlayers, guestBonus);
+      if (isCancelled) return;
+
+      const hostGoals = res.teamAGoals ?? 0;
+      const guestGoals = res.teamBGoals ?? 0;
+
+      const hostMins = Array.from({ length: hostGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      const guestMins = Array.from({ length: guestGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      
+      const evs: any[] = [];
+      hostMins.forEach(min => {
+        const scorer = myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعب";
+        evs.push({ min, scorer, uid });
+      });
+      guestMins.forEach(min => {
+        const scorer = aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "لاعب";
+        evs.push({ min, scorer, uid: oppUid });
+      });
+      const allEvs = evs.sort((a, b) => a.min - b.min);
+
+      update(roomRef.current, {
+        "game/matchResult": {
+          goals: {
+            [uid]: hostGoals,
+            [oppUid]: guestGoals,
+          },
+          commentary: res.commentary,
+          events: allEvs,
+          createdAt: Date.now()
+        }
+      }).catch(err => console.log("Failed to update matchResult:", err));
+    }
+
+    simulateOnline();
+    return () => { isCancelled = true; };
+  }, [isBot, myRole, roomData?.game?.matchResult, roomRef?.current]);
+
+  // 4. أونلاين: في حال تأخر player1 (أكثر من 6 ثوان)، يقوم player2 بالمحاكاة احتياطياً
+  useEffect(() => {
+    if (isBot || myRole === "player1" || !roomRef?.current || !roomData?.game) return;
+    if (roomData.game.matchResult) return;
+
+    const timer = setTimeout(async () => {
+      if (roomData?.game?.matchResult) return;
+      const normalize = (p: any) => ({ name: p.name, rating: p.overallRating || p.rating || 78, position: p.position });
+      const guestPlayers = myPlayers.map((name: string) => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+      const hostPlayers = aiPlayers.map((name: string) => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
+
+      const res = await getMatchResult("فريقك", guestPlayers, bonus, opponentName, hostPlayers, 0);
+      const guestGoals = res.teamAGoals ?? 0;
+      const hostGoals = res.teamBGoals ?? 0;
+
+      const guestMins = Array.from({ length: guestGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      const hostMins = Array.from({ length: hostGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
+      
+      const evs: any[] = [];
+      guestMins.forEach(min => {
+        const scorer = myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعب";
+        evs.push({ min, scorer, uid });
+      });
+      hostMins.forEach(min => {
+        const scorer = aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "لاعب";
+        evs.push({ min, scorer, uid: oppUid });
+      });
+      const allEvs = evs.sort((a, b) => a.min - b.min);
+
+      update(roomRef.current, {
+        "game/matchResult": {
+          goals: {
+            [uid]: guestGoals,
+            [oppUid]: hostGoals,
+          },
+          commentary: res.commentary,
+          events: allEvs,
+          createdAt: Date.now()
+        }
+      }).catch(() => {});
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, [isBot, myRole, roomData?.game?.matchResult, roomRef?.current]);
+
+  // 5. استلام النتيجة الموحدة من Firebase لكلا اللاعبين
+  useEffect(() => {
+    if (isBot) return;
+    const synced = roomData?.game?.matchResult;
+    if (synced && synced.goals) {
+      const myG = synced.goals[uid] ?? 0;
+      const oppG = synced.goals[oppUid] ?? 0;
+      const mappedEvents = (synced.events || []).map((ev: any) => ({
+        min: ev.min,
+        scorer: ev.scorer,
+        team: ev.uid === uid ? "me" : "ai"
+      }));
+      setMatchData({
+        myGoals: myG,
+        aiGoals: oppG,
+        commentary: synced.commentary || "مباراة مثيرة انتهت " + myG + "-" + oppG,
+        events: mappedEvents
+      });
+    }
+  }, [isBot, roomData?.game?.matchResult, uid, oppUid]);
+
+  // 6. تشغيل الأنيميشن المتزامن للأحداث والنتيجة
   useEffect(() => {
     if (!matchData) return;
 
-    const { myGoals, aiGoals } = matchData;
-    const evs: any[] = [];
-    const myMins = Array.from({ length: myGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
-    const aiMins = Array.from({ length: aiGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
-    myMins.forEach(min => evs.push({ min, scorer: myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعبك", team: "me" }));
-    aiMins.forEach(min => evs.push({ min, scorer: aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "opp", team: "ai" }));
-    const allEvs = evs.sort((a, b) => a.min - b.min);
+    const { myGoals, aiGoals, events: allEvs } = matchData;
 
     Animated.timing(progressAnim, { toValue: 100, duration: 6000, useNativeDriver: false }).start(() => {
       setDone(true);
@@ -501,7 +616,14 @@ export default function OnlineAuction() {
         setWhoseTurn(data.game.turn ?? "");
         setLastRaiser(data.game.lastRaiser ?? null);
         setMyBidAttempt((data.game.currentBid ?? 0) + BID_STEP);
-        if (data.game.phase === "end") { setPhase("end"); setGameOver(true); }
+        if (data.game.phase === "end") {
+          if (data.game.surrenderedBy) {
+            setPhase("end");
+          } else {
+            setPhase(card === '3' ? "wildcard" : "coach");
+          }
+          setGameOver(true);
+        }
         if (data.game.phase === "result") {
            setPhase("result");
            if (data.game.lastResult) {
@@ -785,7 +907,7 @@ export default function OnlineAuction() {
   }
 
   function goNext(nextIdx: number, isMyStart: boolean) {
-    if (nextIdx >= players.length) { setPhase("end"); setGameOver(true); return; }
+    if (nextIdx >= players.length) { setPhase(card === '3' ? "wildcard" : "coach"); setGameOver(true); return; }
     animateCardTransition(() => {
       setPlayerIdx(nextIdx);
       const np = players[nextIdx];
@@ -961,14 +1083,7 @@ export default function OnlineAuction() {
   }
 
   if (phase === "match") {
-    const calcResult = () => {
-      if (oppSurrendered) return 'win';
-      if (iSurrendered) return 'loss';
-      const w = calcWinner();
-      if (w === 'me') return 'win';
-      if (w === 'opp') return 'loss';
-      return 'draw';
-    };
+    const oppUid = Object.keys(roomData?.players || {}).find(k => k !== uid) || "";
     return (
       <MatchScreen
         myTeam={myTeam}
@@ -979,9 +1094,14 @@ export default function OnlineAuction() {
         coachBonus={coachBonus}
         coachName={coachName}
         opponentName={opponentName}
+        isBot={isBot}
+        roomRef={roomRef}
+        roomData={roomData}
+        uid={uid}
+        oppUid={oppUid}
+        myRole={myRole}
         onFinish={(matchResult: 'win' | 'loss' | 'draw') => {
           if (!isBot) recordOnlineMatchResult(matchResult);
-          if (!isBot && roomRef.current) remove(roomRef.current).catch(() => {});
           router.replace('/');
         }}
       />
@@ -1018,28 +1138,40 @@ export default function OnlineAuction() {
   }
 
   if (phase === "end") {
+    if (!iSurrendered && !oppSurrendered) {
+      if (card === '3') {
+        return (
+          <WildcardScreen 
+            myTeam={myTeam}
+            allPlayers={playersData}
+            budget={myBudget}
+            onComplete={(newTeam, newBudget) => {
+              setMyTeam(newTeam);
+              setMyBudget(newBudget);
+              if (!isBot && roomRef.current && roomData?.game) {
+                const newBudgets = { ...roomData.game.budgets, [uid]: newBudget };
+                const newTeams = { ...roomData.game.teams, [uid]: newTeam };
+                update(roomRef.current, {
+                  "game/budgets": newBudgets,
+                  "game/teams": newTeams
+                });
+              }
+              setPhase("coach");
+            }}
+          />
+        );
+      }
+      return (
+        <CoachScreen budget={myBudget} onSelect={(bonus, name) => { setCoachBonus(bonus); setCoachName(name); setPhase("match"); }} />
+      );
+    }
+
     return (
       <View style={styles.endBg}>
         <SafeAreaView style={styles.endContainer}>
-          <Text style={styles.endTitle}>{iSurrendered ? "انسحبت! 🚪" : oppSurrendered ? `انسحب ${opponentName} 🚪` : (myWon ? "🏆 أنت الفائز!" : calcWinner().startsWith("draw") ? "🤝 تعادل!" : `😤 ${opponentName} فاز!`)}</Text>
-          <Text style={styles.endSubtitle}>{iSurrendered ? `${opponentName} كسب المباراة` : oppSurrendered ? "أنت كسبت المباراة!" : (myWon ? "رائع! بنيت أقوى فريق" : "حاول مرة ثانية")}</Text>
-          <View style={styles.endStats}>
-            <View style={styles.endStatBox}>
-              <Text style={styles.endStatNum}>{myCount}</Text>
-              <Text style={styles.endStatLabel}>لاعبيك</Text>
-            </View>
-            <Text style={styles.endStatVs}>VS</Text>
-            <View style={styles.endStatBox}>
-              <Text style={styles.endStatNum}>{oppCount}</Text>
-              <Text style={styles.endStatLabel}>لاعبي {opponentName}</Text>
-            </View>
-          </View>
-          {!iSurrendered && !oppSurrendered && (
-            <TouchableOpacity style={[styles.endBtn, { backgroundColor: "#f59e0b", marginBottom: 12 }]} onPress={() => setPhase(card === '3' ? "wildcard" : "coach")}>
-              <Text style={styles.endBtnText}>{card === '3' ? "⚡ استخدم بطاقة وايلد كارد!" : "🏟️ اختر مدربك وابدأ المباراة!"}</Text>
-            </TouchableOpacity>
-          )}
-          <TouchableOpacity style={[styles.endBtn, { backgroundColor: "#1e293b" }]} onPress={() => {
+          <Text style={styles.endTitle}>{iSurrendered ? "انسحبت! 🚪" : `انسحب ${opponentName} 🚪`}</Text>
+          <Text style={styles.endSubtitle}>{iSurrendered ? `${opponentName} كسب المباراة` : "أنت كسبت المباراة!"}</Text>
+          <TouchableOpacity style={[styles.endBtn, { backgroundColor: "#1e293b", marginTop: 20 }]} onPress={() => {
             if (!isBot && roomRef.current) remove(roomRef.current).catch(() => {});
             router.replace("/");
           }}>

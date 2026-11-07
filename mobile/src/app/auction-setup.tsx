@@ -11,23 +11,23 @@ import { useRouter } from 'expo-router';
 // بيانات الأقسام
 // ============================================================
 const MODES = [
-  { id: '1', label: 'مزاد المليار', image: require('../assets/card_billion.jpg'),  locked: true,  comingSoon: true },
-  { id: '2', label: 'برو ماكس',    image: require('../assets/card_pro_max.jpg'), locked: false,  comingSoon: false },
-  { id: '3', label: 'كلاسيك',      image: require('../assets/card_classic.jpg'), locked: false, comingSoon: false },
+  { id: '1', label: 'قريبا', image: require('../assets/card_last_bid.jpeg'),  locked: true,  comingSoon: true },
+  { id: '2', label: '11 vs 11',    image: require('../assets/card_pro_max.jpg'), locked: false,  comingSoon: false },
+  { id: '3', label: '5 vs 5',      image: require('../assets/card_classic.jpg'), locked: false, comingSoon: false },
 ];
 
 const CARDS = [
-  { id: '1', label: 'نو ريسك نو فان', image: require('../assets/card_normal.jpg'),    locked: true,  comingSoon: true,  tint: '#92400e' },
-  { id: '2', label: 'لاست بيد',       image: require('../assets/card_last_bid.jpg'), locked: true, comingSoon: true, tint: null },
-  { id: '3', label: 'وايلد كارد',     image: require('../assets/card_wildcard.jpg'), locked: false, comingSoon: false, tint: null },
+  { id: '1', label: 'قريبا', image: require('../assets/card_last_bid.jpeg'),    locked: true,  comingSoon: true,  tint: '#92400e' },
+  { id: '2', label: 'قريبا',       image: require('../assets/card_last_bid.jpeg'), locked: true, comingSoon: true, tint: null },
+  { id: '3', label: 'بدل لاعب ',     image: require('../assets/card_wildcard.jpg'), locked: false, comingSoon: false, tint: null },
   { id: '4', label: 'عادي',           image: require('../assets/card_normal.jpg'),   locked: false, comingSoon: false, tint: null },
 ];
 
 const LEAGUES = [
-  { id: 'epic',    label: 'Epic',        color: '#7f1d1d', emoji: '🌟' },
-  { id: 'showtime',label: 'Showtime',    color: '#1e3a8a', emoji: '🎭' },
-  { id: 'bigtime', label: 'Bigtime',     color: '#7c3aed', emoji: '⏱️' },
-  { id: 'all',     label: 'كل اللاعبين', color: '#064e3b', emoji: '⚽' },
+  { id: 'epic',    label: 'Epic',        color: '#7f1d1d', image: require('../assets/empty-epic.png') },
+  { id: 'showtime',label: 'Showtime',    color: '#1e3a8a', image: require('../assets/Neon Electric ShoTime Card Template.png') },
+  { id: 'bigtime', label: 'Bigtime',     color: '#7c3aed', image: require('../assets/empty-bigtime.png') },
+  { id: 'all',     label: 'كل اللاعبين', color: '#064e3b', image: require('../assets/Neon All Players Championship Card.png') },
 ];
 
 // ============================================================
@@ -64,7 +64,7 @@ function SelectCard({
 }
 
 // ============================================================
-// مكون كارت الدوري / اللاعبين (بدون صورة - لون + ايموجي)
+// مكون كارت الدوري / اللاعبين
 // ============================================================
 function LeagueCard({
   item, selected, onPress,
@@ -74,9 +74,12 @@ function LeagueCard({
   return (
     <TouchableOpacity
       onPress={item.comingSoon ? undefined : onPress}
-      style={[styles.leagueCard, { backgroundColor: item.color }, selected && styles.cardSelected, item.comingSoon && { opacity: 0.85 }]}
+      style={[styles.leagueCard, !item.image && { backgroundColor: item.color }, selected && styles.cardSelected, item.comingSoon && { opacity: 0.85 }]}
       activeOpacity={item.comingSoon ? 1 : 0.85}
     >
+      {item.image && (
+        <Image source={item.image} style={styles.leagueImage} resizeMode="cover" />
+      )}
       {selected && (
         <View style={styles.checkBadge}>
           <Text style={styles.checkText}>✓</Text>
@@ -87,7 +90,9 @@ function LeagueCard({
           <Text style={styles.comingSoonText}>قريبا</Text>
         </View>
       )}
-      <Text style={styles.leagueEmoji}>{item.emoji}</Text>
+      {!item.image && item.emoji && (
+        <Text style={styles.leagueEmoji}>{item.emoji}</Text>
+      )}
       <View style={styles.cardLabelBox}>
         <Text style={styles.cardLabel}>{item.label}</Text>
       </View>
@@ -249,6 +254,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center', alignItems: 'center',
     position: 'relative',
   },
+  leagueImage: { width: '100%', height: '100%', position: 'absolute' },
   leagueEmoji: { fontSize: 40, marginBottom: 10 },
 
   // --- footer buttons ---

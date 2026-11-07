@@ -722,7 +722,7 @@ export default function AiAuction() {
   // ── اللاعب التالي ──────────────────────────────────────
   function nextPlayer() {
     const remaining = PLAYERS.filter(p => !playedIds.includes(p.id));
-    if (remaining.length === 0) { setPhase("end"); return; }
+    if (remaining.length === 0) { setPhase(card === '3' ? "wildcard" : "coach"); return; }
     
     Animated.parallel([
       Animated.timing(fadeCard,  { toValue: 0,    duration: 280, useNativeDriver: true }),
@@ -884,29 +884,42 @@ export default function AiAuction() {
 
   // ── شاشة النهاية ───────────────────────────────────────
   if (phase === "end" || surrendered) {
-    const iWon = surrendered ? false : Object.keys(myTeam).length >= Object.keys(aiTeam).length;
+    if (!surrendered) {
+      if (card === '3') {
+        const myTeamArray = Object.values(myTeam);
+        return (
+          <WildcardScreen 
+            myTeam={myTeamArray}
+            allPlayers={playersData}
+            budget={myBudget}
+            onComplete={(newTeam, newBudget) => {
+              const newTeamObj: Record<number, string> = {};
+              newTeam.forEach((name, i) => newTeamObj[i] = name);
+              setMyTeam(newTeamObj);
+              setMyBudget(newBudget);
+              setPhase("coach");
+            }}
+          />
+        );
+      }
+      return (
+        <CoachScreen
+          budget={myBudget}
+          onSelect={(bonus, name) => {
+            setCoachBonus(bonus);
+            setCoachName(name);
+            setPhase("match");
+          }}
+        />
+      );
+    }
+
     return (
       <View style={styles.endBg}>
         <SafeAreaView style={styles.endContainer}>
-          <Text style={styles.endTitle}>{surrendered ? "لقد خسرت بالانسحاب!" : (iWon ? "🏆 أنت الفائز!" : "🤖 AI فاز!")}</Text>
-          <Text style={styles.endSubtitle}>{surrendered ? "AI (خصمك) كسب المباراة" : (iWon ? "رائع! بنيت أقوى فريق" : "حاول مرة ثانية")}</Text>
-          <View style={styles.endStats}>
-            <View style={styles.endStatBox}>
-              <Text style={styles.endStatNum}>{Object.keys(myTeam).length}</Text>
-              <Text style={styles.endStatLabel}>لاعبيك</Text>
-            </View>
-            <Text style={styles.endStatVs}>VS</Text>
-            <View style={styles.endStatBox}>
-              <Text style={styles.endStatNum}>{Object.keys(aiTeam).length}</Text>
-              <Text style={styles.endStatLabel}>لاعبي AI</Text>
-            </View>
-          </View>
-          {!surrendered && (
-            <TouchableOpacity style={[styles.endBtn, { backgroundColor: "#f59e0b", marginBottom: 12 }]} onPress={() => setPhase(card === '3' ? "wildcard" : "coach")}>
-              <Text style={styles.endBtnText}>{card === '3' ? "⚡ استخدم بطاقة وايلد كارد!" : "🏟️ اختر مدربك وابدأ المباراة!"}</Text>
-            </TouchableOpacity>
-          )}
-          <TouchableOpacity style={styles.endBtn} onPress={() => router.replace("/ai-intro" as any)}>
+          <Text style={styles.endTitle}>لقد خسرت بالانسحاب!</Text>
+          <Text style={styles.endSubtitle}>AI (خصمك) كسب المباراة</Text>
+          <TouchableOpacity style={[styles.endBtn, { marginTop: 20 }]} onPress={() => router.replace("/ai-intro" as any)}>
             <Text style={styles.endBtnText}>العب مجدداً</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.endBackBtn} onPress={() => router.push("/")}>
