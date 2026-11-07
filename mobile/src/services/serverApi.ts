@@ -72,7 +72,15 @@ export async function fetchUserProfile() {
   return user;
 }
 
-export async function updateUserProfile(updates: { username?: string; phone?: string; coinsDelta?: number; winInc?: boolean; lossInc?: boolean }) {
+export async function updateUserProfile(updates: { 
+  username?: string; 
+  phone?: string; 
+  coinsDelta?: number; 
+  winInc?: boolean; 
+  lossInc?: boolean;
+  drawInc?: boolean;
+  pointsDelta?: number;
+}) {
   const token = await getAuthToken();
   if (!token) return null;
 

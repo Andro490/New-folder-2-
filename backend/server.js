@@ -194,7 +194,7 @@ app.get('/api/user/me', verifyUserToken, (req, res) => {
 
 // تحديث بيانات المستخدم (الاسم، الهاتف، الكوينز)
 app.put('/api/user/me', verifyUserToken, (req, res) => {
-  const { username, phone, coinsDelta, winInc, lossInc } = req.body;
+  const { username, phone, coinsDelta, winInc, lossInc, drawInc, pointsDelta } = req.body;
   const users = readUsers();
   const user = users[req.user.uid];
   if (!user) return res.status(404).json({ message: 'المستخدم غير موجود' });
@@ -202,6 +202,15 @@ app.put('/api/user/me', verifyUserToken, (req, res) => {
   if (username) user.username = username.trim();
   if (phone !== undefined) user.phone = phone.trim();
   if (typeof coinsDelta === 'number') user.coins = Math.max(0, (user.coins || 0) + coinsDelta);
+
+  // نقاط المباراة (3 للفوز، 1 للتعادل، 0 للخسارة)
+  if (typeof pointsDelta === 'number' && pointsDelta > 0) {
+    user.stats = user.stats || {};
+    user.stats.points       = (user.stats.points       || 0) + pointsDelta;
+    user.stats.dailyPoints  = (user.stats.dailyPoints  || 0) + pointsDelta;
+    user.stats.weeklyPoints = (user.stats.weeklyPoints || 0) + pointsDelta;
+    user.stats.monthlyPoints= (user.stats.monthlyPoints|| 0) + pointsDelta;
+  }
 
   if (winInc) {
     user.stats = user.stats || {};
@@ -213,6 +222,10 @@ app.put('/api/user/me', verifyUserToken, (req, res) => {
   if (lossInc) {
     user.stats = user.stats || {};
     user.stats.losses = (user.stats.losses || 0) + 1;
+  }
+  if (drawInc) {
+    user.stats = user.stats || {};
+    user.stats.draws = (user.stats.draws || 0) + 1;
   }
 
   users[req.user.uid] = user;
@@ -234,12 +247,12 @@ app.get('/api/leaderboard', (req, res) => {
     username: u.username || 'لاعب',
     photoURL: u.photoURL,
     wins: type === 'daily'
-      ? (u.stats?.dailyWins || 0)
+      ? (u.stats?.dailyPoints || 0)
       : type === 'monthly'
-      ? (u.stats?.monthlyWins || 0)
+      ? (u.stats?.monthlyPoints || 0)
       : type === 'all'
-      ? (u.stats?.wins || 0)
-      : (u.stats?.weeklyWins || 0),
+      ? (u.stats?.points || 0)
+      : (u.stats?.weeklyPoints || 0),
     coins: u.coins || 0,
   }));
 

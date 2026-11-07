@@ -73,9 +73,11 @@ export default function OnlineLobby() {
               mode: mode,
               createdAt: Date.now(),
               seed: Math.floor(Math.random() * 999999),
+              hostUid: uid,
+              guestUid: oppUid,
               players: {
-                [uid]: { username },
-                [oppUid]: { username: waitingPlayers[oppUid].username },
+                [uid]: { username, role: 'player1' },
+                [oppUid]: { username: waitingPlayers[oppUid].username, role: 'player2' },
               }
             }).then(() => {
               setStatus("found");
@@ -114,8 +116,8 @@ export default function OnlineLobby() {
 
             if ((rData as any).status === "ready" && (rData as any).players?.[uid]) {
               if (!matchedRef.current) {
-                // If they are rejoining, we must know their actual role!
-                const isP1 = Object.keys((rData as any).players)[0] === uid;
+                // If they are rejoining, we read their exact assigned role!
+                const myAssignedRole = (rData as any).players?.[uid]?.role || ((rData as any).hostUid === uid ? 'player1' : 'player2');
                 
                 matchedRef.current = true;
                 roomId.current = rId;
@@ -123,7 +125,7 @@ export default function OnlineLobby() {
                 setStatus("found");
                 Animated.spring(foundAnim, { toValue: 1, friction: 5, useNativeDriver: true }).start();
                 setTimeout(() => {
-                  router.replace(`/online-auction?roomId=${rId}&role=${isP1 ? "player1" : "player2"}&mode=${mode}&league=${league}&card=${card}` as any);
+                  router.replace(`/online-auction?roomId=${rId}&role=${myAssignedRole}&mode=${mode}&league=${league}&card=${card}` as any);
                 }, 1800);
                 if (unsubRooms) unsubRooms();
               }

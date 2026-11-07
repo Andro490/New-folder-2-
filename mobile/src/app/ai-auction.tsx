@@ -14,6 +14,7 @@ import { playSoundEffect, triggerVibration, setMusicVolume, setMusicMuted, getMu
 import { getAiMaxBid, getMatchResult } from "../utils/gemini";
 import { Ionicons } from '@expo/vector-icons';
 import WildcardScreen from "../components/WildcardScreen";
+import { updateUserProfile } from "../services/serverApi";
 
 // Shuffle helper
 function shuffle<T>(array: T[]): T[] {
@@ -232,7 +233,7 @@ function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonu
   }, []);
 
   const [progress,  setProgress]  = useState(0);        // 0..100
-  const [events,    setEvents]    = useState<{ min: number; scorer: string; team: "me" | "ai" }[]>([]);
+  const [events,    setEvents]    = useState<{ min: number; scorer?: string; saver?: string; team: "me" | "ai"; type: "goal" | "save" }[]>([]);
   const [done,      setDone]      = useState(false);
   const progressAnim = useRef(new Animated.Value(0)).current;
 
@@ -242,16 +243,45 @@ function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonu
     const { myGoals, aiGoals } = matchData;
     
     // Create random events based on Gemini's score
-    const evs: { min: number; scorer: string; team: "me" | "ai" }[] = [];
+    const isGK = (name: string) => {
+      const p = allPlayers.find((x: any) => x.name === name || x.playerName === name);
+      return p?.position === 'GK';
+    };
+    const myOutfield = myPlayers.filter(n => !isGK(n));
+    const aiOutfield = aiPlayers.filter(n => !isGK(n));
+    const myGKPlayer = myPlayers.find(n => isGK(n));
+    const aiGKPlayer = aiPlayers.find(n => isGK(n));
+
+    const evs: { min: number; scorer?: string; saver?: string; team: "me" | "ai"; type: "goal" | "save" }[] = [];
     const myMins = Array.from({ length: myGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
     const aiMins = Array.from({ length: aiGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
-    myMins.forEach(min => evs.push({ min, scorer: myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعبك", team: "me" }));
-    aiMins.forEach(min => evs.push({ min, scorer: aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "AI", team: "ai" }));
+    myMins.forEach(min => {
+      const scorers = myOutfield.length > 0 ? myOutfield : myPlayers;
+      evs.push({ min, scorer: scorers[Math.floor(Math.random() * scorers.length)] || "لاعبك", team: "me", type: "goal" });
+      if (aiGKPlayer && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: aiGKPlayer, team: "ai", type: "save" });
+    });
+    aiMins.forEach(min => {
+      const scorers = aiOutfield.length > 0 ? aiOutfield : aiPlayers;
+      evs.push({ min, scorer: scorers[Math.floor(Math.random() * scorers.length)] || "AI", team: "ai", type: "goal" });
+      if (myGKPlayer && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: myGKPlayer, team: "me", type: "save" });
+    });
     const allEvs = evs.sort((a, b) => a.min - b.min);
 
     Animated.timing(progressAnim, { toValue: 100, duration: 6000, useNativeDriver: false }).start(() => {
       setDone(true);
-      playSoundEffect(myGoals > aiGoals ? 'win-match' : 'lost-match');
+      const isWin = myGoals > aiGoals;
+      const isD = myGoals === aiGoals;
+      playSoundEffect(isWin ? 'win-match' : 'lost-match');
+      
+      // حفظ النقاط والإحصائيات في السيرفر المركزي
+      const points = isWin ? 3 : isD ? 1 : 0;
+      updateUserProfile({
+        winInc: isWin,
+        lossInc: !isWin && !isD,
+        drawInc: isD,
+        pointsDelta: points,
+        coinsDelta: isWin ? 10 : isD ? 2 : 0,
+      }).catch(err => console.log("Failed to update profile after match:", err));
     });
 
     let revealed = 0;
@@ -310,6 +340,13 @@ function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonu
             </View>
             <Text style={{ color: "#94a3b8", fontSize: 11 }} numberOfLines={1}>فريقك</Text>
             <Text style={{ color: myGoals > aiGoals ? "#22c55e" : "#fff", fontSize: 40, fontWeight: "900" }}>{myGoals}</Text>
+            {done && (
+              <View style={{ backgroundColor: "#22c55e20", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 10, marginTop: 4, borderWidth: 1, borderColor: "#22c55e50" }}>
+                <Text style={{ color: "#22c55e", fontSize: 11, fontWeight: "bold" }}>
+                  {iWon ? "+3 نقاط" : isDraw ? "+1 نقطة" : "+0 نقاط"}
+                </Text>
+              </View>
+            )}
           </View>
         </View>
 
@@ -342,17 +379,20 @@ function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonu
                 marginBottom: 8, alignItems: "center"
               }}>
                 {ev.team === "ai" && (
-                  <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#ef444430", justifyContent: "center", alignItems: "center", marginRight: 8 }}>
-                    <Text style={{ fontSize: 14 }}>⚽</Text>
+                  <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: ev.type === "save" ? "#22c55e30" : "#ef444430", justifyContent: "center", alignItems: "center", marginRight: 8 }}>
+                    <Text style={{ fontSize: 14 }}>{ev.type === "save" ? "🧤" : "⚽"}</Text>
                   </View>
                 )}
                 <View style={{ backgroundColor: ev.team === "me" ? "#3b82f620" : "#ef444420", borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, borderWidth: 1, borderColor: ev.team === "me" ? "#3b82f6" : "#ef4444" }}>
                   <Text style={{ color: ev.team === "me" ? "#3b82f6" : "#ef4444", fontSize: 12, fontWeight: "bold" }}>{ev.team === "ai" ? "AI" : "فريقك"}</Text>
-                  <Text style={{ color: "#fff", fontSize: 13 }}>{ev.scorer} ⚽ {ev.min}'</Text>
+                  {ev.type === "save"
+                    ? <Text style={{ color: "#fff", fontSize: 13 }}>🧤 {ev.saver} صد الكرة {ev.min}'</Text>
+                    : <Text style={{ color: "#fff", fontSize: 13 }}>{ev.scorer} ⚽ {ev.min}'</Text>
+                  }
                 </View>
                 {ev.team === "me" && (
-                  <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#3b82f630", justifyContent: "center", alignItems: "center", marginLeft: 8 }}>
-                    <Text style={{ fontSize: 14 }}>⚽</Text>
+                  <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: ev.type === "save" ? "#22c55e30" : "#3b82f630", justifyContent: "center", alignItems: "center", marginLeft: 8 }}>
+                    <Text style={{ fontSize: 14 }}>{ev.type === "save" ? "🧤" : "⚽"}</Text>
                   </View>
                 )}
               </View>
@@ -370,6 +410,9 @@ function MatchScreen({ myTeam, aiTeam, myBudget, aiBudget, allPlayers, coachBonu
               <Text style={{ fontSize: 28 }}>{iWon ? "🏆" : isDraw ? "🤝" : "😢"}</Text>
               <Text style={{ color: iWon ? "#22c55e" : isDraw ? "#f59e0b" : "#ef4444", fontSize: 20, fontWeight: "900", marginTop: 4 }}>
                 {iWon ? "فزت!" : isDraw ? "تعادل!" : "خسرت!"}
+              </Text>
+              <Text style={{ color: "#facc15", fontSize: 14, fontWeight: "bold", marginTop: 6 }}>
+                {iWon ? "حصلت على +3 نقاط و +10 كوينز 🪙" : isDraw ? "حصلت على +1 نقطة و +2 كوينز 🪙" : "لم تحصل على نقاط"}
               </Text>
             </View>
             <TouchableOpacity style={{ backgroundColor: "#facc15", borderRadius: 16, padding: 14, alignItems: "center", marginBottom: 8 }} onPress={onPlayAgain}>
@@ -932,7 +975,7 @@ export default function AiAuction() {
 
   // ── الشاشة الرئيسية ────────────────────────────────────
   return (
-    <ImageBackground source={require("../assets/card_billion.jpg")} style={{ flex: 1 }} resizeMode="cover">
+    <ImageBackground source={require("../assets/ai_auction_intro.jpg")} style={{ flex: 1 }} resizeMode="cover">
       <View style={styles.overlay} />
       <StatusBar style="light" />
 

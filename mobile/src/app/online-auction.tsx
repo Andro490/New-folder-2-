@@ -13,6 +13,7 @@ import { playSoundEffect, triggerVibration, setMusicVolume, setMusicMuted, getMu
 import { getMatchResult, getAiMaxBid } from "../utils/gemini";
 import { Ionicons } from '@expo/vector-icons';
 import WildcardScreen from "../components/WildcardScreen";
+import { updateUserProfile } from "../services/serverApi";
 
 const { width, height } = Dimensions.get("window");
 
@@ -226,11 +227,12 @@ function MatchScreen({
 
   // 1. تسجيل مدرب اللاعب في Firebase
   useEffect(() => {
-    if (isBot || !roomRef?.current || !uid) return;
+    if (isBot || !roomRef?.current) return;
+    const roleKey = myRole === 'player2' ? 'player2' : 'player1';
     update(roomRef.current, {
-      [`game/coaches/${uid}`]: { coachName: coachName || "بدون مدرب", coachBonus: bonus }
+      [`game/coaches/${roleKey}`]: { coachName: coachName || "بدون مدرب", coachBonus: bonus }
     }).catch(() => {});
-  }, [isBot, uid, bonus, coachName]);
+  }, [isBot, myRole, bonus, coachName]);
 
   // 2. إذا كنا ضد البوت (isBot) نحاكي محلياً
   useEffect(() => {
@@ -247,8 +249,29 @@ function MatchScreen({
       const myMins = Array.from({ length: myG }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
       const aiMins = Array.from({ length: aiG }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
       const evs: any[] = [];
-      myMins.forEach(min => evs.push({ min, scorer: myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعبك", team: "me" }));
-      aiMins.forEach(min => evs.push({ min, scorer: aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "opp", team: "ai" }));
+      // دالة للتحقق من أن اللاعب حارس مرمى
+      const isGK = (name: string) => {
+        const p = allPlayers.find((x: any) => x.name === name || x.playerName === name);
+        return p?.position === 'GK';
+      };
+      // لاعبو الحقل فقط (بدون الحارس) لاختيار المسجلين
+      const myOutfield = myPlayers.filter(n => !isGK(n));
+      const aiOutfield = aiPlayers.filter(n => !isGK(n));
+      // حارس كل فريق (لأحداث التصدي)
+      const myGK = myPlayers.find(n => isGK(n));
+      const aiGK = aiPlayers.find(n => isGK(n));
+      myMins.forEach(min => {
+        const scorers = myOutfield.length > 0 ? myOutfield : myPlayers;
+        evs.push({ min, scorer: scorers[Math.floor(Math.random() * scorers.length)] || "لاعبك", team: "me", type: "goal" });
+        // تصدي الحارس المنافس في نفس الوقت تقريباً (احتمال 40%)
+        if (aiGK && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: aiGK, team: "ai", type: "save" });
+      });
+      aiMins.forEach(min => {
+        const scorers = aiOutfield.length > 0 ? aiOutfield : aiPlayers;
+        evs.push({ min, scorer: scorers[Math.floor(Math.random() * scorers.length)] || "opp", team: "ai", type: "goal" });
+        // تصدي حارسك (احتمال 40%)
+        if (myGK && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: myGK, team: "me", type: "save" });
+      });
       const allEvs = evs.sort((a, b) => a.min - b.min);
 
       setMatchData({ myGoals: myG, aiGoals: aiG, commentary: res.commentary, events: allEvs });
@@ -269,7 +292,7 @@ function MatchScreen({
       const guestPlayers = aiPlayers.map((name: string) => normalize(allPlayers.find((x: any) => x.name === name) || { name, overallRating: 78 }));
       
       const hostBonus = bonus;
-      const guestBonus = roomData?.game?.coaches?.[oppUid]?.coachBonus ?? 0;
+      const guestBonus = roomData?.game?.coaches?.player2?.coachBonus ?? 0;
 
       const res = await getMatchResult("فريقك", hostPlayers, hostBonus, opponentName, guestPlayers, guestBonus);
       if (isCancelled) return;
@@ -280,24 +303,36 @@ function MatchScreen({
       const hostMins = Array.from({ length: hostGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
       const guestMins = Array.from({ length: guestGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
       
+      // دالة التحقق من الحارس
+      const isGKOnline = (name: string) => {
+        const p = allPlayers.find((x: any) => x.name === name || x.playerName === name);
+        return p?.position === 'GK';
+      };
+      const hostOutfield = myPlayers.filter((n: string) => !isGKOnline(n));
+      const guestOutfield = aiPlayers.filter((n: string) => !isGKOnline(n));
+      const hostGK = myPlayers.find((n: string) => isGKOnline(n));
+      const guestGK = aiPlayers.find((n: string) => isGKOnline(n));
+
       const evs: any[] = [];
       hostMins.forEach(min => {
-        const scorer = myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعب";
-        evs.push({ min, scorer, uid });
+        const scorers = hostOutfield.length > 0 ? hostOutfield : myPlayers;
+        const scorer = scorers[Math.floor(Math.random() * scorers.length)] || "لاعب";
+        evs.push({ min, scorer, role: 'player1', type: 'goal' });
+        if (guestGK && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: guestGK, role: 'player2', type: 'save' });
       });
       guestMins.forEach(min => {
-        const scorer = aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "لاعب";
-        evs.push({ min, scorer, uid: oppUid });
+        const scorers = guestOutfield.length > 0 ? guestOutfield : aiPlayers;
+        const scorer = scorers[Math.floor(Math.random() * scorers.length)] || "لاعب";
+        evs.push({ min, scorer, role: 'player2', type: 'goal' });
+        if (hostGK && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: hostGK, role: 'player1', type: 'save' });
       });
       const allEvs = evs.sort((a, b) => a.min - b.min);
 
       update(roomRef.current, {
         "game/matchResult": {
-          goals: {
-            [uid]: hostGoals,
-            [oppUid]: guestGoals,
-          },
-          commentary: res.commentary,
+          p1Goals: hostGoals,
+          p2Goals: guestGoals,
+          commentary: res.commentary || ("مباراة مثيرة انتهت " + hostGoals + "-" + guestGoals),
           events: allEvs,
           createdAt: Date.now()
         }
@@ -308,7 +343,7 @@ function MatchScreen({
     return () => { isCancelled = true; };
   }, [isBot, myRole, roomData?.game?.matchResult, roomRef?.current]);
 
-  // 4. أونلاين: في حال تأخر player1 (أكثر من 6 ثوان)، يقوم player2 بالمحاكاة احتياطياً
+  // 4. أونلاين: في حال تأخر player1 (أكثر من 5 ثوان)، يقوم player2 بالمحاكاة احتياطياً
   useEffect(() => {
     if (isBot || myRole === "player1" || !roomRef?.current || !roomData?.game) return;
     if (roomData.game.matchResult) return;
@@ -327,28 +362,40 @@ function MatchScreen({
       const hostMins = Array.from({ length: hostGoals }, () => Math.floor(Math.random() * 90) + 1).sort((a, b) => a - b);
       
       const evs: any[] = [];
-      guestMins.forEach(min => {
-        const scorer = myPlayers[Math.floor(Math.random() * (myPlayers.length || 1))] || "لاعب";
-        evs.push({ min, scorer, uid });
-      });
+      // دالة التحقق من الحارس (للـ fallback)
+      const isGKFb = (name: string) => {
+        const p = allPlayers.find((x: any) => x.name === name || x.playerName === name);
+        return p?.position === 'GK';
+      };
+      const hostOutfieldFb = aiPlayers.filter((n: string) => !isGKFb(n));
+      const guestOutfieldFb = myPlayers.filter((n: string) => !isGKFb(n));
+      const hostGKFb = aiPlayers.find((n: string) => isGKFb(n));
+      const guestGKFb = myPlayers.find((n: string) => isGKFb(n));
+
       hostMins.forEach(min => {
-        const scorer = aiPlayers[Math.floor(Math.random() * (aiPlayers.length || 1))] || "لاعب";
-        evs.push({ min, scorer, uid: oppUid });
+        const scorers = hostOutfieldFb.length > 0 ? hostOutfieldFb : aiPlayers;
+        const scorer = scorers[Math.floor(Math.random() * scorers.length)] || "لاعب";
+        evs.push({ min, scorer, role: 'player1', type: 'goal' });
+        if (guestGKFb && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: guestGKFb, role: 'player2', type: 'save' });
+      });
+      guestMins.forEach(min => {
+        const scorers = guestOutfieldFb.length > 0 ? guestOutfieldFb : myPlayers;
+        const scorer = scorers[Math.floor(Math.random() * scorers.length)] || "لاعب";
+        evs.push({ min, scorer, role: 'player2', type: 'goal' });
+        if (hostGKFb && Math.random() < 0.4) evs.push({ min: Math.max(1, min - 1), saver: hostGKFb, role: 'player1', type: 'save' });
       });
       const allEvs = evs.sort((a, b) => a.min - b.min);
 
       update(roomRef.current, {
         "game/matchResult": {
-          goals: {
-            [uid]: guestGoals,
-            [oppUid]: hostGoals,
-          },
-          commentary: res.commentary,
+          p1Goals: hostGoals,
+          p2Goals: guestGoals,
+          commentary: res.commentary || ("مباراة مثيرة انتهت " + hostGoals + "-" + guestGoals),
           events: allEvs,
           createdAt: Date.now()
         }
       }).catch(() => {});
-    }, 6000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, [isBot, myRole, roomData?.game?.matchResult, roomRef?.current]);
@@ -357,22 +404,28 @@ function MatchScreen({
   useEffect(() => {
     if (isBot) return;
     const synced = roomData?.game?.matchResult;
-    if (synced && synced.goals) {
-      const myG = synced.goals[uid] ?? 0;
-      const oppG = synced.goals[oppUid] ?? 0;
+    if (synced && typeof synced.p1Goals === 'number') {
+      const isP1 = myRole === 'player1';
+      const myG = isP1 ? synced.p1Goals : synced.p2Goals;
+      const oppG = isP1 ? synced.p2Goals : synced.p1Goals;
+      const myRoleStr = isP1 ? 'player1' : 'player2';
+
       const mappedEvents = (synced.events || []).map((ev: any) => ({
         min: ev.min,
         scorer: ev.scorer,
-        team: ev.uid === uid ? "me" : "ai"
+        saver: ev.saver,
+        type: ev.type || 'goal',
+        team: ev.role === myRoleStr ? "me" : "ai"
       }));
+
       setMatchData({
         myGoals: myG,
         aiGoals: oppG,
-        commentary: synced.commentary || "مباراة مثيرة انتهت " + myG + "-" + oppG,
+        commentary: synced.commentary || ("مباراة مثيرة انتهت " + myG + "-" + oppG),
         events: mappedEvents
       });
     }
-  }, [isBot, roomData?.game?.matchResult, uid, oppUid]);
+  }, [isBot, roomData?.game?.matchResult, myRole]);
 
   // 6. تشغيل الأنيميشن المتزامن للأحداث والنتيجة
   useEffect(() => {
@@ -430,6 +483,13 @@ function MatchScreen({
             <View style={{ width: 50, height: 50, borderRadius: 25, backgroundColor: "#3b82f6", justifyContent: "center", alignItems: "center", marginBottom: 6 }}><Text style={{ fontSize: 24 }}>👤</Text></View>
             <Text style={{ color: "#94a3b8", fontSize: 11 }} numberOfLines={1}>فريقك</Text>
             <Text style={{ color: myGoals > aiGoals ? "#22c55e" : "#fff", fontSize: 40, fontWeight: "900" }}>{myGoals}</Text>
+            {done && (
+              <View style={{ backgroundColor: "#22c55e20", paddingHorizontal: 8, paddingVertical: 2, borderRadius: 10, marginTop: 4, borderWidth: 1, borderColor: "#22c55e50" }}>
+                <Text style={{ color: "#22c55e", fontSize: 11, fontWeight: "bold" }}>
+                  {iWon ? "+3 نقاط" : isDraw ? "+1 نقطة" : "+0 نقاط"}
+                </Text>
+              </View>
+            )}
           </View>
         </View>
         <View style={{ marginHorizontal: 16, marginTop: 16 }}>
@@ -449,12 +509,15 @@ function MatchScreen({
           <ScrollView>
             {events.map((ev, i) => (
               <View key={i} style={{ flexDirection: "row", justifyContent: ev.team === "me" ? "flex-end" : "flex-start", marginBottom: 8, alignItems: "center" }}>
-                {ev.team === "ai" && <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#ef444430", justifyContent: "center", alignItems: "center", marginRight: 8 }}><Text style={{ fontSize: 14 }}>⚽</Text></View>}
+                {ev.team === "ai" && <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: ev.type === "save" ? "#22c55e30" : "#ef444430", justifyContent: "center", alignItems: "center", marginRight: 8 }}><Text style={{ fontSize: 14 }}>{ev.type === "save" ? "🧤" : "⚽"}</Text></View>}
                 <View style={{ backgroundColor: ev.team === "me" ? "#3b82f620" : "#ef444420", borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, borderWidth: 1, borderColor: ev.team === "me" ? "#3b82f6" : "#ef4444" }}>
                   <Text style={{ color: ev.team === "me" ? "#3b82f6" : "#ef4444", fontSize: 12, fontWeight: "bold" }}>{ev.team === "ai" ? opponentName : "فريقك"}</Text>
-                  <Text style={{ color: "#fff", fontSize: 13 }}>{ev.scorer} ⚽ {ev.min}'</Text>
+                  {ev.type === "save"
+                    ? <Text style={{ color: "#fff", fontSize: 13 }}>🧤 {ev.saver} صد الكرة {ev.min}'</Text>
+                    : <Text style={{ color: "#fff", fontSize: 13 }}>{ev.scorer} ⚽ {ev.min}'</Text>
+                  }
                 </View>
-                {ev.team === "me" && <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: "#3b82f630", justifyContent: "center", alignItems: "center", marginLeft: 8 }}><Text style={{ fontSize: 14 }}>⚽</Text></View>}
+                {ev.team === "me" && <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: ev.type === "save" ? "#22c55e30" : "#3b82f630", justifyContent: "center", alignItems: "center", marginLeft: 8 }}><Text style={{ fontSize: 14 }}>{ev.type === "save" ? "🧤" : "⚽"}</Text></View>}
               </View>
             ))}
           </ScrollView>
@@ -464,6 +527,9 @@ function MatchScreen({
             <View style={{ backgroundColor: iWon ? "#22c55e20" : isDraw ? "#f59e0b20" : "#ef444420", borderRadius: 16, padding: 16, alignItems: "center", marginBottom: 12, borderWidth: 1, borderColor: iWon ? "#22c55e" : isDraw ? "#f59e0b" : "#ef4444" }}>
               <Text style={{ fontSize: 28 }}>{iWon ? "🏆" : isDraw ? "🤝" : "😢"}</Text>
               <Text style={{ color: iWon ? "#22c55e" : isDraw ? "#f59e0b" : "#ef4444", fontSize: 20, fontWeight: "900", marginTop: 4 }}>{iWon ? "فزت!" : isDraw ? "تعادل!" : "خسرت!"}</Text>
+              <Text style={{ color: "#facc15", fontSize: 14, fontWeight: "bold", marginTop: 6 }}>
+                {iWon ? "حصلت على +3 نقاط و +10 كوينز 🪙" : isDraw ? "حصلت على +1 نقطة و +2 كوينز 🪙" : "لم تحصل على نقاط"}
+              </Text>
             </View>
             <TouchableOpacity style={{ backgroundColor: "#1e293b", borderRadius: 16, padding: 14, alignItems: "center", borderWidth: 1, borderColor: "#334155" }} onPress={() => onFinish(iWon ? 'win' : isDraw ? 'draw' : 'loss')}>
               <Text style={{ color: "#94a3b8", fontWeight: "bold", fontSize: 14 }}>🏠 الرئيسية</Text>
@@ -489,30 +555,55 @@ export default function OnlineAuction() {
   const myUsername = auth.currentUser?.displayName || "لاعب";
   const BOT_UID = "bot_opponent";
 
-  // ── Record online match result in Firebase ────────────────
+  // ── Record online match result in Firebase & Backend ────────────────
   const statsRecordedRef = useRef(false);
   async function recordOnlineMatchResult(result: 'win' | 'loss' | 'draw') {
-    if (statsRecordedRef.current || isBot) return;
+    if (statsRecordedRef.current) return;
     statsRecordedRef.current = true;
-    const playerRef = ref(database, `players/${uid}`);
-    const updates: any = {
-      'stats/totalMatches': increment(1),
-    };
-    if (result === 'win') {
-      updates['stats/wins'] = increment(1);
-      updates['stats/dailyWins'] = increment(1);
-      updates['stats/weeklyWins'] = increment(1);
-      updates['stats/monthlyWins'] = increment(1);
-      updates['coins'] = increment(10);
-    } else if (result === 'loss') {
-      updates['stats/losses'] = increment(1);
-    } else {
-      updates['stats/draws'] = increment(1);
+
+    // 1. تحديث قاعدة بيانات Firebase (لغرف ومستخدمي Firebase)
+    if (!isBot && uid) {
+      const playerRef = ref(database, `players/${uid}`);
+      const points = result === 'win' ? 3 : result === 'draw' ? 1 : 0;
+      const updates: any = {
+        'stats/totalMatches': increment(1),
+      };
+      if (result === 'win') {
+        updates['stats/wins'] = increment(1);
+        updates['stats/dailyWins'] = increment(points);
+        updates['stats/weeklyWins'] = increment(points);
+        updates['stats/monthlyWins'] = increment(points);
+        updates['stats/points'] = increment(points);
+        updates['coins'] = increment(10);
+      } else if (result === 'draw') {
+        updates['stats/draws'] = increment(1);
+        updates['stats/dailyWins'] = increment(points);
+        updates['stats/weeklyWins'] = increment(points);
+        updates['stats/monthlyWins'] = increment(points);
+        updates['stats/points'] = increment(points);
+        updates['coins'] = increment(2);
+      } else {
+        updates['stats/losses'] = increment(1);
+      }
+      try {
+        await update(playerRef, updates);
+      } catch (e) {
+        console.log('Failed to record firebase stats:', e);
+      }
     }
+
+    // 2. تحديث السيرفر المركزي (VPS) لحفظ النقاط (3 للفوز، 1 للتعادل) وقائمة المتصدرين
     try {
-      await update(playerRef, updates);
+      const points = result === 'win' ? 3 : result === 'draw' ? 1 : 0;
+      await updateUserProfile({
+        winInc: result === 'win',
+        lossInc: result === 'loss',
+        drawInc: result === 'draw',
+        pointsDelta: points,
+        coinsDelta: result === 'win' ? 10 : result === 'draw' ? 2 : 0,
+      });
     } catch (e) {
-      console.log('Failed to record stats:', e);
+      console.log('Failed to record serverApi stats:', e);
     }
   }
 
@@ -1084,6 +1175,11 @@ export default function OnlineAuction() {
 
   if (phase === "match") {
     const oppUid = Object.keys(roomData?.players || {}).find(k => k !== uid) || "";
+    // التأكد من الدور الفعلي بناءً على بيانات الغرفة في Firebase
+    const effectiveRole = !isBot && roomData
+      ? (roomData.players?.[uid]?.role || (roomData.hostUid === uid ? 'player1' : 'player2'))
+      : myRole;
+
     return (
       <MatchScreen
         myTeam={myTeam}
@@ -1099,9 +1195,9 @@ export default function OnlineAuction() {
         roomData={roomData}
         uid={uid}
         oppUid={oppUid}
-        myRole={myRole}
+        myRole={effectiveRole}
         onFinish={(matchResult: 'win' | 'loss' | 'draw') => {
-          if (!isBot) recordOnlineMatchResult(matchResult);
+          recordOnlineMatchResult(matchResult);
           router.replace('/');
         }}
       />
@@ -1186,7 +1282,7 @@ export default function OnlineAuction() {
   const displayOppBudget = isBot ? botBudgetRef.current : opponentBudget;
 
   return (
-    <ImageBackground source={require("../assets/card_billion.jpg")} style={{ flex: 1 }} resizeMode="cover">
+    <ImageBackground source={require("../assets/ai_auction_intro.jpg")} style={{ flex: 1 }} resizeMode="cover">
       <View style={styles.overlay} />
       <StatusBar style="light" />
 
